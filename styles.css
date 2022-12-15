@@ -1,24 +1,46 @@
-body {
-    padding: 0;
-    margin: 0;
-    background: #f2f6e9;
+.navbar
+{
+    transition: all 0.5s ease;
+    height: 70px;
 }
 
-.nav-link,
-.navbar-brand {
-    color: #fff;
-    cursor: pointer;
-}
-.nav-link {
-    margin-right: 1em !important;
-}
-.nav-link:hover {
-    color: #000;
-}
-.navbar-collapse {
-    justify-content: flex-end;
-}
-.banner{
-    background-color: #33a897;
+.navbar-brand, .nav-link
+{
+    font-size: 1.5rem;
 }
 
+.masthead
+{
+    background-image: url('images/banner-pic.jpg');
+    height: 100vh;
+}
+
+#contact
+{
+    height: 400px;
+}
+
+nav[data-toggle="toc"] {
+    top: 42px;
+}
+
+/* small screens */
+@media (max-width: 768px) {
+    /* override stickyness so that the navigation does not follow scrolling */
+    nav[data-toggle="toc"] {
+        margin-bottom: 42px;
+        position: static;
+    }
+
+    /* PICK ONE */
+    /* don't expand nested items, which pushes down the rest of the page when navigating */
+    nav[data-toggle="toc"] .nav .active .nav {
+        display: none;
+    }
+    /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+    /*
+    nav[data-toggle='toc'] .nav .nav {
+      display: block;
+    }
+    */
+}
