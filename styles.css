@@ -1,28 +1,44 @@
-.navbar
-{
+.navbar {
     transition: all 0.5s ease;
     height: 70px;
 }
 
-.navbar-brand, .nav-link
-{
+.navbar-brand, .nav-link {
     font-size: 1.5rem;
 }
 
-.masthead
-{
+.masthead {
     background-image: url('images/banner-pic.jpg');
     height: 100vh;
 }
 
-#contact
-{
+#contact {
     height: 400px;
 }
-
-nav[data-toggle="toc"] {
-    top: 42px;
+.carousel
+{
+    width:100vh;
+    height: 50vh;
 }
+
+.carousel-item {
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.hide-me
+{
+    background: transparent;
+    border: transparent;
+
+}
+
 
 /* small screens */
 @media (max-width: 768px) {
@@ -37,6 +53,7 @@ nav[data-toggle="toc"] {
     nav[data-toggle="toc"] .nav .active .nav {
         display: none;
     }
+
     /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
     /*
     nav[data-toggle='toc'] .nav .nav {
