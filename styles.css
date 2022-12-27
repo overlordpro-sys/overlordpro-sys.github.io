@@ -8,18 +8,30 @@
 }
 
 .masthead {
-    background-image: url('files/banner-pic.jpg');
+    background-image: url('images/banner-pic.jpg');
     height: 100vh;
 }
 
 #contact {
     height: 400px;
 }
-
-.card {
-    height: 100%;
+.carousel
+{
+    width:100vh;
+    height: 50vh;
 }
 
+.carousel-item {
+    overflow: hidden;
+    height: 50vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
 
 .hide-me
 {
