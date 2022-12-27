@@ -5,18 +5,17 @@
     <title> Brent Lee Website </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
   </head>
-  <body style="padding-top:70px">
+  <body class="bg-dark" style="padding-top:70px">
     <!--Navbar start-->
     <div class="container-fluid px-0">
       <nav class="navbar navbar-expand-sm px-3 fixed-top bg-dark">
         <a class="navbar-brand text-light" href="#">Brent Lee</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+        <button type="button" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#main-navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
@@ -36,76 +35,108 @@
 
 
 
-    <div class="container-fluid bg-dark text-white">
-      <h1 class="text-center">Coursework</h1>
-      <h2 class="text-center">Freshman</h2>
-      <div class="d-flex justify-content-center">
-        <div id="freshmanCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#freshmanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#freshmanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#freshmanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <!-- Item 1 -->
-            <div class="carousel-item active">
-              <img src="images/test_pic1.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-              <button class="stretched-link hide-me" data-bs-toggle="collapse" data-bs-target="#freshCollapse1" aria-expanded="false" aria-controls="freshCollapse1"></button>
-            </div>
-            <!-- Item 2 -->
-            <div class="carousel-item">
-              <img src="images/test_pic2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-              <button class="stretched-link hide-me" data-bs-toggle="collapse" data-bs-target="#freshCollapse2" aria-expanded="false" aria-controls="freshCollapse2"></button>
-            </div>
-            <!-- Item 3 -->
-            <div class="carousel-item">
-              <img src="images/test_pic3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-              <button class="stretched-link hide-me" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+    <div class="container bg-dark">
+      <h1 class="text-center text-white">Projects/Coursework</h1>
+<--! Filters-->
+      <div class="d-flex gap-2 mx-auto justify-content-md-center p-2">
+        <button type="button" class="btn btn-primary filter" category-one="freshman">Freshman</button>
+        <button type="button" class="btn btn-primary filter" category-one="sophomore">Sophomore</button>
+        <button type="button" class="btn btn-primary filter" category-one="junior">Junior</button>
+        <button type="button" class="btn btn-primary filter" category-one="senior">Senior</button>
+        <button type="button" class="btn btn-primary filter" category-one="personal">Personal Projects</button>
+        <button type="button" class="btn btn-primary filter" category-one="all">Show All</button>
+      </div>
+<--! Cards-->
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="card" category="freshman">
+            <img src="files/courseworkCover/freshmanCover1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">App Development Planning Guide</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#freshman1">
+                More information
+              </button>
             </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card" category="freshman">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" category="freshman">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" category="sophomore">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" category="sophomore">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" category="sophomore">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<--! Modals-->
+<--! Freshman 1 (App Development Planning Guide)-->
+    <div class="modal fade" id="freshman1" tabindex="-1" aria-labelledby="freshman1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h5 class="modal-title w-100" id="freshman1Label">App Development Planning Guide</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <embed src="files/courseworkContent/AppDevelopmentPlanningGuide.pdf" type="application/pdf" width="100%" height="600px" />
+                </div>
+                <div class="col">
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#freshmanCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#freshmanCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+
+          </div>
         </div>
       </div>
-      <!-- Item 1 Card -->
-      <div class="collapse" id="freshCollapse1 in">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-        </div>
-      </div>
-      <!-- Item 2 Card -->
-      <div class="collapse" id="freshCollapse2">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-        </div>
-      </div>
-      <!-- Item 3 Card -->
-      <h2 class="text-center">Sophomore</h2>
-      <h2 class="text-center">Junior</h2>
-      <h2 class="text-center">Senior</h2>
     </div>
 
 
-    <section class="bg-dark text-light">
+    <section class="bg-dark text-light p-2">
       <div class="container-fluid bg-dark">
         <div class="social d-flex justify-content-center">
           <a class="mx-2" href="#!"><i class="fab fa-3x fa-youtube"></i></a>
@@ -118,6 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/courses.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   </body>
 
 <!--main page-->
