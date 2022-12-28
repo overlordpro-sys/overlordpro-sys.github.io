@@ -1,107 +1,173 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+<head>
     <title> Brent Lee Website </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-  </head>
-  <body style="padding-top:70px">
-    <!--Navbar start-->
+</head>
+<body class="" style="padding-top:70px">
+<!--Navbar start-->
     <div class="container-fluid px-0">
-      <nav class="navbar navbar-expand-sm px-3 fixed-top bg-dark">
-        <a class="navbar-brand text-light" href="#">Brent Lee</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-                data-target="#main-navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse " id="main-navigation">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-3"><a class="nav-link text-light" href="index.html">Home</a></li>
-            <li class="nav-item px-3"><a class="nav-link text-light" href="courses.html">Courses</a></li>
-            <li class="nav-item px-3"><a class="nav-link text-light" href="#">Internship</a></li>
-            <li class="nav-item px-3"><a class="nav-link text-light" href="#">Resume</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <!--Navbar end-->
-
-
-
-
-
-    <div class="container-fluid bg-dark text-white">
-      <h1 class="text-center">Coursework</h1>
-      <h2 class="text-center">Freshman</h2>
-      <div class="d-flex justify-content-center">
-        <div id="freshmanCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#freshmanCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#freshmanCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#freshmanCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <!-- Item 1 -->
-            <div class="carousel-item active">
-              <img src="images/test_pic1.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-              <button class="stretched-link hide-me" data-bs-toggle="collapse" data-bs-target="#freshCollapse1" aria-expanded="false" aria-controls="freshCollapse1"></button>
+        <nav class="navbar navbar-expand-sm px-3 fixed-top bg-dark">
+            <a class="navbar-brand text-light" href="#">Brent Lee</a>
+            <button class="navbar-toggler navbar-dark" data-target="#main-navigation" data-toggle="collapse"
+                    type="button">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="main-navigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3"><a class="nav-link text-light" href="index.html">Home</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-light" href="courses.html">Courses</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-light" href="#">Internship</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-light" href="#">Resume</a></li>
+                </ul>
             </div>
-            <!-- Item 2 -->
-            <div class="carousel-item">
-              <img src="images/test_pic2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-              <button class="stretched-link hide-me" data-bs-toggle="collapse" data-bs-target="#freshCollapse2" aria-expanded="false" aria-controls="freshCollapse2"></button>
-            </div>
-            <!-- Item 3 -->
-            <div class="carousel-item">
-              <img src="images/test_pic3.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-              <button class="stretched-link hide-me" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
-            </div>
-          </div>
+        </nav>
+        </div>
+        <!--Navbar end-->
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#freshmanCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#freshmanCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+    <div class="container-fluid bg-dark text-white text-justify">
+        <h1 class="text-center">Coursework</h1>
+        <h2 class="text-center">Freshman</h2>
+        <h3 class="text-center p-1">Semester 1</h3>
+        <!--Freshman Semester 1-->
+        <div class="d-flex justify-content-center pb-2">
+            <div class="carousel slide bg-secondary" data-bs-interval="false" id="freshmanCarousel1">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                            data-bs-target="#freshmanCarousel1" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#freshmanCarousel1"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#freshmanCarousel1"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block img-fluid"
+                             src="images/carouselImages/freshman1_1.png">
+                        <div class="carousel-caption border border-white bg-dark ">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="carousel-item">
+                        <!--              <img src="images/carouselImages/freshman1_2.png" class="d-block w-100" alt="...">-->
+                        <video autoplay class="img-responsive h-100" loop muted width="100%">
+                            <source src="images/carouselImages/freshman1_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-caption border border-white bg-dark">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="carousel-item">
+                        <video autoplay class="img-responsive h-100" loop muted width="100%">
+                            <source src="images/carouselImages/freshman1_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-caption border border-white bg-dark">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#freshmanCarousel1"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#freshmanCarousel1"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-      </div>
-      <!-- Item 1 Card -->
-      <div class="collapse" id="freshCollapse1 in">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        <div class="container-md text-justify w-60 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Tortor consequat id porta nibh venenatis cras sed felis. A erat nam at lectus urna duis.
+            Adipiscing tristique risus nec feugiat in. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget.
+            Risus viverra adipiscing at in. Nunc scelerisque viverra mauris in. Laoreet id donec ultrices tincidunt arcu
+            non sodales neque. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Tincidunt id aliquet risus
+            feugiat in ante. Sagittis orci a scelerisque purus semper eget. Etiam non quam lacus suspendisse faucibus
+            interdum.
         </div>
-      </div>
-      <!-- Item 2 Card -->
-      <div class="collapse" id="freshCollapse2">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        <!--Freshman Semester 2-->
+        <h3 class="text-center p-1">Semester 2</h3>
+        <div class="d-flex justify-content-center pb-2">
+            <div class="carousel slide" data-bs-interval="false" id="freshmanCarousel2">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                            data-bs-target="#freshmanCarousel2" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#freshmanCarousel2"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#freshmanCarousel2"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block img-fluid"
+                             src="images/carouselImages/freshman2_1.png">
+                        <div class="carousel-caption border border-white bg-dark">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="carousel-item">
+                        <!--              <img src="images/carouselImages/freshman1_2.png" class="d-block w-100" alt="...">-->
+                        <img alt="..." class="d-block img-fluid"
+                             src="images/carouselImages/freshman2_2.png">
+                        <div class="carousel-caption border border-white bg-dark">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block img-fluid"
+                             src="images/carouselImages/freshman2_3.png">
+                        <div class="carousel-caption border border-white bg-dark">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#freshmanCarousel2"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#freshmanCarousel2"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-      </div>
-      <!-- Item 3 Card -->
-      <h2 class="text-center">Sophomore</h2>
-      <h2 class="text-center">Junior</h2>
-      <h2 class="text-center">Senior</h2>
+        <div class="container-md text-justify w-60 pb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Tortor consequat id porta nibh venenatis cras sed felis. A erat nam at lectus urna duis.
+            Adipiscing tristique risus nec feugiat in. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget.
+            Risus viverra adipiscing at in. Nunc scelerisque viverra mauris in. Laoreet id donec ultrices tincidunt arcu
+            non sodales neque. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Tincidunt id aliquet risus
+            feugiat in ante. Sagittis orci a scelerisque purus semper eget. Etiam non quam lacus suspendisse faucibus
+            interdum.
+        </div>
+
     </div>
 
 
