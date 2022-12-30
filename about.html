@@ -11,11 +11,10 @@
               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
               rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
     </head>
-    <body>
-
-
+    <body class="bg-dark">
     <!--Navbar start-->
     <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-sm px-3 fixed-top">
@@ -26,7 +25,7 @@
             </button>
             <div class="collapse navbar-collapse " id="main-navigation">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item px-3"><a class="nav-link text-light" href="index.html">Home</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-light" href="about.html">Home</a></li>
                     <li class="nav-item px-3"><a class="nav-link text-light" href="courses.html">Courses</a></li>
                     <li class="nav-item px-3"><a class="nav-link text-light" href="#">Internship</a></li>
                     <li class="nav-item px-3"><a class="nav-link text-light" href="#">Resume</a></li>
@@ -39,58 +38,51 @@
 
     <header class="masthead">
         <div class="container h-100">
-            <div class="row row-cols-sm-1 h-100 align-items-center">
+            <div class="row h-100 align-items-center">
                 <div class="col text-center">
                     <img class="img-fluid rounded-circle border border-light border-5" src="images/self-portrait.jpg"
-                         style="height: 50vh">
+                         style="height: 30vh" alt="Image of Brent">
                     <h1 class="font-weight-light text-light">Hi, I'm Brent Lee</h1>
                 </div>
             </div>
+            <div class="row down-arrow align-items-center"></div>
         </div>
     </header>
 
-    <section class="py-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="fw-light text-light display-4 fw-bolder">About Me</h2>
-                </div>
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <img class="img-fluid rounded-circle border border-light border-5" src="images/about-pic.jpg" alt="Brent Front View Image">
             </div>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3 justify-content-center text-center">
-                <div class="col">
-
-                </div>
-
-                <div class="col">
-                    <div class="well">1</div>
-                </div>
-
+            <div id="about-overview" class="col-sm-12 col-lg-8 text-light">
+                <h3>Brent Lee</h3>
+                <p class="lead"><b>Valencia High School, ValTech 2024, IB (International Baccalaureate) Diploma Student</b></p>
+                <p class="lead">I'm a high school student and have a passion for computer science. <br>
+                    I'm highly interested in software development, artificial intelligence,
+                    machine learning, and computer vision.
+                </p>
+                <p class="lead">I'm currently enrolled as a junior at Valencia High School and
+                    pursuing a dual diploma in my school's ValTech and IB programs.</p>
             </div>
         </div>
-    </section>
+    </div>
 
 
-    <!--        <div class="container-fluid bg-dark">-->
-    <!--            <div class="row gx-0 mb-4 align-items-center">-->
-    <!--                <div class="featured-text text-center text-lg-left text-wrap text-light">-->
-    <!--                    <h1>About me</h1>-->
-    <!--                    <img class="img-fluid border border-5 border-dark rounded" src="images/self-portrait.jpg" class="img-fluid"-->
-    <!--                         style="max-width:50%">-->
-    <!--                    <p>Test</p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
+
+
 
     <div class="container-fluid bg-dark">
         <div class="social d-flex justify-content-center">
-            <a class="mx-2" href="#!"><i class="fab fa-3x fa-youtube"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-3x fa-linkedin"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-3x fa-github"></i></a>
+            <a class="mx-2" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCWsG0tszNpZowuGIkNcHuQw"><i
+                    class="fab fa-3x fa-youtube"></i></a>
+            <a class="mx-2" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brent-lee-165806247/"><i
+                    class="fab fa-3x fa-linkedin"></i></a>
+            <a class="mx-2" target="_blank" rel="noopener noreferrer" href="https://github.com/overlordpro-sys"><i class="fab fa-3x fa-github"></i></a>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="js/site.js"></script>
+    <script defer src="js/about.js"></script>
 
     </body>
 
