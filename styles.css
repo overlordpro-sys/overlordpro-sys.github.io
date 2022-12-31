@@ -6,6 +6,9 @@ body{
     font-family: Dosis, sans-serif;
 }
 
+section{
+    min-height: 100vh;
+}
 
 .navbar {
     transition: all 0.5s ease;
@@ -17,12 +20,10 @@ body{
     color: #000000;
     font-size: 1.1em;
 }
-.navbar .navbar-nav .nav-link:hover {
-    color: #000000;
-}
 .navbar .navbar-nav .nav-item {
     position: relative;
 }
+
 .navbar .navbar-nav .nav-item::after {
     position: absolute;
     left: 0;
@@ -41,11 +42,12 @@ body{
 
 .masthead {
     background-image: url('images/banner-pic.jpg');
+    background-attachment: fixed;
     height: 100vh;
 }
 
 #about {
-    padding-block: 5rem;
+    padding: 10rem 0;
 }
 
 .abt-btn {
@@ -61,41 +63,63 @@ body{
     transform: scale(1.2);
 }
 
-.skills {
-
+#skills {
+    padding: 20vh 0;
 }
 
-.skill-icons {
+#skills ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px;
+    max-width: 90vw;
     margin: 0 auto;
     position: relative;
     z-index: 10;
 }
 
-#skills .skill-icons li {
+#skills li {
     transition: transform 0.5s ease;
     margin: 1rem;
     font-size: 1rem;
     align-items:center;
 }
-#skills .skill-icons li:hover {
+
+#skills li:hover {
     transform:scale(1.5);
 }
 
+#skills iconify-icon {
+    font-size: 7rem;
+}
 
+#skills p {
+    font-size: 25px;
+    margin: 1rem;
+}
 
+#projects {
+    height: 100vh;
+    padding: 10vh 0;
+}
 
+.project {
+    padding: 2rem 0;
+}
 
+.project .btn {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
 
 @media (max-width: 992px) {
     #social1 {
         visibility: hidden;
         height: 0 !important;
         margin-top: 0 !important;
+    }
+    .project h2 {
+        padding-top: 1rem;
     }
 }
 
