@@ -1,6 +1,11 @@
+html {
+    scroll-padding-top: 65px; /* height of sticky navbar */
+}
+
 body{
     font-family: Dosis, sans-serif;
 }
+
 
 .navbar {
     transition: all 0.5s ease;
@@ -39,10 +44,73 @@ body{
     height: 100vh;
 }
 
+#about {
+    padding-block: 5rem;
+}
+
+.abt-btn {
+    transition: transform .4s ease;
+    padding: 1.25rem 2.5rem;
+    margin-inline: .75rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 25px;
+}
+
+.abt-btn:hover {
+    transform: scale(1.2);
+}
+
+.skills {
+
+}
+
+.skill-icons {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+#skills .skill-icons li {
+    transition: transform 0.5s ease;
+    margin: 1rem;
+    font-size: 1rem;
+    align-items:center;
+}
+#skills .skill-icons li:hover {
+    transform:scale(1.5);
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    #social1 {
+        visibility: hidden;
+        height: 0 !important;
+        margin-top: 0 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #social2 {
+        visibility: hidden;
+    }
+}
+
 #contact {
     height: 400px;
 }
 
+
+/*Coursework Carousel Formatting*/
 .carousel
 {
     width:1280px;
@@ -86,13 +154,7 @@ body{
     color: black;
 }
 
-.hide-me
-{
-    background: transparent;
-    border: transparent;
-
-}
-
+/*Masthead animation*/
 .down-arrow {
     position: absolute;
     top: 90vh;
