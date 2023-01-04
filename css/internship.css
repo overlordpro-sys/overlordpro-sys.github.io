@@ -1,0 +1,5 @@
+.masthead {
+    background-image: url('../images/banner-pic.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+}

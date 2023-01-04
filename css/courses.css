@@ -1,0 +1,40 @@
+.carousel-item img {
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+    background-color:white;
+}
+
+.carousel-control-next-icon:after
+{
+    content: '>';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+}
+
+.row p {
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .row p {
+        font-size: 1.05vw;
+    }
+}

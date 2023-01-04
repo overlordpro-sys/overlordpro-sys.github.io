@@ -1,0 +1,55 @@
+html {
+    scroll-padding-top: 65px; /* height of sticky navbar */
+}
+video {
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+}
+
+body{
+    font-family: Dosis, sans-serif;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.navbar {
+    transition: all 0.5s ease;
+    height: 65px;
+    font-size: 25px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+@media (min-width: 768px)
+{
+    .navbar .navbar-nav .nav-item::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        width: 0;
+        content: "";
+        height: 4px;
+        transition: all 0.5s ease;
+    }
+    .navbar .navbar-nav .nav-item:hover::after {
+        width: 70%;
+    }
+}
+
+
+
+
+
