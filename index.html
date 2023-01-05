@@ -12,7 +12,8 @@
               rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet">
 
     </head>
     <body class="bg-dark">
@@ -38,20 +39,23 @@
 
     <header class="masthead">
         <div class="container h-100">
-            <div class="row h-100 align-items-center">
+            <div class="row h-100 align-content-center">
                 <div class="col text-center">
                     <img class="img-fluid rounded-circle border border-light border-5" src="images/self-portrait.jpg"
                          style="height: 30vh" alt="Image of Brent" href="#about">
-                    <h1 class="font-weight-light text-light">Hi, I'm Brent Lee</h1>
+                    <h1 class="text-light">
+                        Hi, I'm
+                        <span class="text-primary">Brent</span>
+                    </h1>
                 </div>
             </div>
             <a class="row down-arrow align-items-center" href="#about"></a>
         </div>
     </header>
 
-    <section id="about">
+    <section class="d-flex align-items-center" id="about">
         <div class="container">
-            <div class="row gx-5 justify-content-center">
+            <div class="row gx-5 justify-content-center align-items-center">
                 <div class="col-8 col-sm-6 col-lg-3">
                     <img class="img-fluid rounded-circle border border-light border-5 mb-5"
                          src="images/about-pic.jpg" alt="Brent Front View Image">
@@ -68,9 +72,9 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-7 text-light">
-                    <h3>Brent Lee</h3>
-                    <p class="lead"><b>Valencia High School, ValTech 2024, IB (International Baccalaureate) Diploma
-                        Student</b></p>
+                    <h2>Brent Lee</h2>
+                    <h4>Valencia High School, ValTech 2024, IB (International Baccalaureate) Diploma
+                        Student</h4>
                     <p class="lead">I'm a high school student with a passion for computer science. <br>
                         I'm highly interested in software development, artificial intelligence,
                         machine learning, and computer vision.
@@ -96,16 +100,16 @@
                 <div class="row text-light">
                     <div class="col-10 mx-auto">
                         <h2 class="mb-3">Learn about my:</h2>
-                        <a class="btn btn-light btn-xl abt-btn" href="#skills">
+                        <a class="btn btn-light abt-btn" href="#skills">
                             Skills</a>
-                        <a class="btn btn-light btn-xl abt-btn" href="#projects">
+                        <a class="btn btn-light abt-btn" href="#projects">
                             Projects</a>
-                        <a class="btn btn-light btn-xl abt-btn" href="courses.html">
+                        <a class="btn btn-light abt-btn" href="courses.html">
                             Coursework</a>
                         <br>
-                        <a class="btn btn-light btn-xl abt-btn disabled" href="">
+                        <a class="btn btn-light abt-btn" href="internship.html">
                             Internship</a>
-                        <a class="btn btn-light btn-xl abt-btn" href="">
+                        <a class="btn btn-light abt-btn" href="">
                             Resume</a>
                     </div>
                 </div>
@@ -113,8 +117,7 @@
         </div>
     </section>
 
-
-    <section class="bg-gradient" id="skills">
+    <section class="d-flex align-items-center" id="skills">
         <div class="container text-center text-light">
             <h1 style="padding-bottom: 60px">Some areas I have experience in:</h1>
             <ul>
@@ -178,14 +181,14 @@
         </div>
     </section>
 
-    <section class="bg-gradient" id="projects">
+    <section id="projects">
         <div class="container text-light">
             <h1 class="text-center">Some of my projects</h1>
-            <div class="row project">
+            <div class="row project align-items-center">
                 <div class="col-lg-6 col-sm-12">
                     <img class="img-fluid" src="images/projects/keyboard.png" alt="Mechanical Keyboard Image">
                 </div>
-                <div class="col-lg-6 col-sm-12 flex-column align-self-center">
+                <div class="col-lg-6 col-sm-12">
                     <h2> Custom Mechanical Keyboard</h2>
                     <p class="lead">
                         For this project, I designed and built my own Arduino mechanical keyboard. Using KiCAD, I created the schematic
@@ -203,13 +206,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row project">
+            <div class="row project align-items-center">
                 <div class="col-lg-6 col-sm-12">
                     <video autoplay loop muted title="AimLab Auto Aimer">
                         <source src="images/projects/aimer.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="col-lg-6 col-sm-12 flex-column align-self-center">
+                <div class="col-lg-6 col-sm-12">
                     <h2>AimLab Auto-Aim</h2>
                     <p class="lead">
                         Using computer vision to technically create an "aim-bot" for an aim training game. I used OpenCV and
@@ -223,11 +226,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row project">
+            <div class="row project align-items-center">
                 <div class="col-lg-6 col-sm-12">
                     <img class="img-fluid" src="images/projects/auto-annotate.png" alt="Bounding Boxes Image">
                 </div>
-                <div class="col-lg-6 col-sm-12 flex-column align-self-center">
+                <div class="col-lg-6 col-sm-12">
                     <h2>TensorFlow Object Detection Assisted Annotation</h2>
                     <p class="lead">
                         In the earlier stages of my Auto-Aim project, I planned to use object detection to locate targets.

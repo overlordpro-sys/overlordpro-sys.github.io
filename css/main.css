@@ -1,6 +1,18 @@
 html {
     scroll-padding-top: 65px; /* height of sticky navbar */
 }
+
+body{
+    font-family: Manrope , sans-serif;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+
+}
+
 video {
     object-fit: contain;
     object-position: center;
@@ -9,17 +21,11 @@ video {
     width: 100%;
 }
 
-body{
-    font-family: Dosis, sans-serif;
-}
 
-section{
-    min-height: 100vh;
-}
 
 .navbar {
     transition: all 0.5s ease;
-    height: 65px;
+    min-height: 65px;
     font-size: 25px;
 }
 
