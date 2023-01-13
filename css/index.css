@@ -46,10 +46,19 @@ body {
 }
 
 @media screen
-and (max-width : 700px) {
-    .carousel-item .carousel-caption {max-height: 60px; padding-top: 4px}
-    .carousel-item .carousel-caption p{font-size: 10px;}
-    .carousel-item .carousel-caption h5{font-size: 15px;}
+and (max-width: 700px) {
+    .carousel-item .carousel-caption {
+        max-height: 60px;
+        padding-top: 4px
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 10px;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 15px;
+    }
 }
 
 #about {
@@ -88,11 +97,11 @@ and (max-width : 700px) {
     transition: transform 0.5s ease;
     margin: 1rem;
     font-size: 1rem;
-    align-items:center;
+    align-items: center;
 }
 
 #skills li:hover {
-    transform:scale(1.5);
+    transform: scale(1.5);
 }
 
 
@@ -116,12 +125,15 @@ and (max-width : 700px) {
         height: 0 !important;
         margin-top: 0 !important;
     }
+
     .project h2 {
         padding-top: 1rem;
     }
+
     #skills iconify-icon {
         font-size: 4rem;
     }
+
     #skills p {
         font-size: 1rem;
     }
@@ -131,13 +143,16 @@ and (max-width : 700px) {
     #social2 {
         visibility: hidden;
     }
+
     #skills iconify-icon {
         font-size: 6rem;
     }
+
     #skills p {
         font-size: 1.5rem;
     }
-    section{
+
+    section {
         min-height: 100vh;
     }
 }

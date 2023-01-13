@@ -2,13 +2,13 @@ html {
     scroll-padding-top: 65px; /* height of sticky navbar */
 }
 
-body{
+body {
     padding-top: 85px;
-    font-family: Manrope , sans-serif;
+    font-family: Manrope, sans-serif;
 }
 
 h1, h2 {
-    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
     font-family: Montserrat, sans-serif;
     font-weight: bolder;
 }
@@ -31,12 +31,12 @@ video {
     color: #000000;
     font-size: 1.1em;
 }
+
 .navbar .navbar-nav .nav-item {
     position: relative;
 }
 
-@media (min-width: 768px)
-{
+@media (min-width: 768px) {
     .navbar .navbar-nav .nav-item::after {
         position: absolute;
         left: 0;
@@ -48,6 +48,7 @@ video {
         height: 4px;
         transition: all 0.5s ease;
     }
+
     .navbar .navbar-nav .nav-item:hover::after {
         width: 70%;
     }
