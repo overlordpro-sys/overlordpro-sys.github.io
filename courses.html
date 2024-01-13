@@ -1,460 +1,853 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <title> Brent Lee Website </title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <script crossorigin="anonymous" src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
+   <head>
+      <title> Brent Lee Website </title>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <script crossorigin="anonymous"
+         src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
 
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/courses.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet">
-</head>
-<body>
-<!--Navbar start-->
-<div class="container-fluid px-0">
-    <nav class="navbar navbar-expand-md px-3 fixed-top bg-dark">
-        <a class="navbar-brand text-light" href="index.html">Brent Lee</a>
-        <button class="navbar-toggler navbar-dark" data-bs-target="#main-navigation" data-bs-toggle="collapse"
-                type="button">
-            <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse bg-dark p-2" id="main-navigation">
-            <ul class="navbar-nav ms-auto bg-dark">
-                <li class="nav-item px-3"><a class="nav-link text-light" href="index.html">About</a></li>
-                <li class="nav-item px-3"><a class="nav-link text-light" href="courses.html">Coursework</a></li>
-                <li class="nav-item px-3"><a class="nav-link text-light" href="internship.html">Internship</a></li>
-                <li class="nav-item px-3"><a class="nav-link text-light" href="resume.html">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-<!--Navbar end-->
-
-
-<div class="container-fluid bg-dark text-white text-justify overflow-hidden">
-    <h1 class="text-center">Coursework for ValTech Portfolio</h1>
-    <h2 class="text-center pt-4">Freshman (AP Computer Science Principles)</h2>
-    <!--Freshman Semester 1-->
-
-    <div class="row justify-content-center gx-5 py-2">
-        <div class="col-xl-6 col-md-8 align-self-center">
-            <div class="carousel slide" data-bs-interval="false" id="freshmanCarousel1">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#freshmanCarousel1" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#freshmanCarousel1"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#freshmanCarousel1"
-                            type="button"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <img alt="App Development Planning Guide Image" class="d-block w-100"
-                             src="files/carouselImages/freshman1_1.png">
-                        <div class="carousel-caption border border-white bg-dark ">
-                            <h5>App Development Planning Guide</h5>
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <video autoplay loop muted title="Quote Maker App Image">
-                            <source src="files/carouselImages/freshman1_2.mp4" type="video/mp4">
-                        </video>
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Random Forecaster App</h5>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="carousel-item">
-                        <video autoplay loop muted title="Quote Maker App Image">
-                            <source src="files/carouselImages/freshman1_3.mp4" type="video/mp4">
-                        </video>
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Quote Maker App</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#freshmanCarousel1"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#freshmanCarousel1"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+      <link crossorigin="anonymous"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/courses.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat"
+         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Manrope"
+         rel="stylesheet">
+   </head>
+   <body>
+      <!--Navbar start-->
+      <div class="container-fluid px-0">
+         <nav class="navbar navbar-expand-md px-3 fixed-top bg-dark">
+            <a class="navbar-brand text-light" href="index.html">Brent Lee</a>
+            <button class="navbar-toggler navbar-dark"
+               data-bs-target="#main-navigation" data-bs-toggle="collapse"
+               type="button">
+               <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse bg-dark p-2"
+               id="main-navigation">
+               <ul class="navbar-nav ms-auto bg-dark">
+                  <li class="nav-item px-3"><a class="nav-link text-light"
+                        href="index.html">About</a></li>
+                  <li class="nav-item px-3"><a class="nav-link text-light"
+                        href="courses.html">Coursework</a></li>
+                  <li class="nav-item px-3"><a class="nav-link text-light"
+                        href="internship.html">Internship</a></li>
+                  <li class="nav-item px-3"><a class="nav-link text-light"
+                        href="resume.html">Resume</a></li>
+               </ul>
             </div>
-        </div>
-        <div class="col-xl-4 col-md-8">
-            <h3 class="text-center py-1">Semester 1</h3>
-            <p>During the first semester, our primary focus was creating apps and working with JavaScript. We learned
-                about each phase of the production process, from the brainstorming stage to the finished project.</p>
-            <p>One of the projects we worked on was an App Development Planning Guide. In this project, the goal was to
-                work through each step in creating a successful app. After brainstorming a topic, I interviewed several
-                classmates to understand user interests. After planning and implementing the app, I received feedback
-                from classmates and reflected on the app-making process.</p>
-            <p>The other two works are both apps that we had to re-create. The first of which is this Random Forecaster
-                app. The app’s purpose is to display the next day’s weather forecast for a random city. While
-                programming this app, we learned how to apply public datasets and utilize random number generation.</p>
-            <p>Another app we worked on was the Quote Maker app. The app aims to allow a user to create their quote. In
-                this app, we utilized conditionals as well as text formatting. The app helped us experiment with
-                formatting, such as font family, font size, text color, and components like a draggable slider.</p>
-        </div>
-    </div>
-    <!--Freshman Semester 2-->
+         </nav>
+      </div>
+      <!--Navbar end-->
 
-    <div class="row justify-content-center gx-5 py-2">
-        <div class="col-xl-6 col-md-8 align-self-center">
-            <div class="carousel slide" data-bs-interval="false" id="freshmanCarousel2">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#freshmanCarousel2" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#freshmanCarousel2"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#freshmanCarousel2"
-                            type="button"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <img alt="Internet Dilemmas Project Image" class="d-block w-100"
-                             src="files/carouselImages/freshman2_1.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Internet Dilemmas Project</h5>
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <img alt="Big, Open, and Crowdsourced Data Assignment Image" class="d-block w-100"
-                             src="files/carouselImages/freshman2_2.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Big, Open, and Crowdsourced Data Assignment</h5>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="carousel-item">
-                        <img alt="Networks and Redundancy Group Assignment Image" class="d-block w-100"
-                             src="files/carouselImages/freshman2_3.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Networks and Redundancy Group Assignment</h5>
-                        </div>
-                    </div>
-                </div>
+      <div
+         class="container-fluid bg-dark text-white text-justify overflow-hidden">
+         <h1 class="text-center">Coursework for ValTech Portfolio</h1>
+         <div class="row flex-column-reverse">
 
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#freshmanCarousel2"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#freshmanCarousel2"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div id="freshman" class="col-12">
+               <h2 class="text-center pt-4">Freshman (AP Computer Science
+                  Principles)</h2>
+               <!--Freshman Semester 1-->
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide" data-bs-interval="false"
+                        id="freshmanCarousel1">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#freshmanCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#freshmanCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#freshmanCarousel1"
+                              type="button"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <!-- Item 1 -->
+                           <div class="carousel-item active">
+                              <img alt="App Development Planning Guide Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/freshman1_1.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark ">
+                                 <h5>App Development Planning Guide</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <video autoplay loop muted
+                                 title="Quote Maker App Image">
+                                 <source
+                                    src="files/carouselImages/freshman1_2.mp4"
+                                    type="video/mp4">
+                              </video>
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Random Forecaster App</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <video autoplay loop muted
+                                 title="Quote Maker App Image">
+                                 <source
+                                    src="files/carouselImages/freshman1_3.mp4"
+                                    type="video/mp4">
+                              </video>
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Quote Maker App</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#freshmanCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#freshmanCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 1</h3>
+                     <p>During the first semester, our primary focus was
+                        creating
+                        apps and working with JavaScript. We learned
+                        about each phase of the production process, from the
+                        brainstorming stage to the finished project.</p>
+                     <p>One of the projects we worked on was an App Development
+                        Planning Guide. In this project, the goal was to
+                        work through each step in creating a successful app.
+                        After
+                        brainstorming a topic, I interviewed several
+                        classmates to understand user interests. After planning
+                        and
+                        implementing the app, I received feedback
+                        from classmates and reflected on the app-making
+                        process.</p>
+                     <p>The other two works are both apps that we had to
+                        re-create.
+                        The first of which is this Random Forecaster
+                        app. The app’s purpose is to display the next day’s
+                        weather
+                        forecast for a random city. While
+                        programming this app, we learned how to apply public
+                        datasets and utilize random number generation.</p>
+                     <p>Another app we worked on was the Quote Maker app. The
+                        app
+                        aims to allow a user to create their quote. In
+                        this app, we utilized conditionals as well as text
+                        formatting. The app helped us experiment with
+                        formatting, such as font family, font size, text color,
+                        and
+                        components like a draggable slider.</p>
+                  </div>
+               </div>
+               <!--Freshman Semester 2-->
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide" data-bs-interval="false"
+                        id="freshmanCarousel2">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#freshmanCarousel2"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#freshmanCarousel2"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#freshmanCarousel2"
+                              type="button"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <!-- Item 1 -->
+                           <div class="carousel-item active">
+                              <img alt="Internet Dilemmas Project Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/freshman2_1.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Internet Dilemmas Project</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <img
+                                 alt="Big, Open, and Crowdsourced Data Assignment Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/freshman2_2.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Big, Open, and Crowdsourced Data
+                                    Assignment</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <img
+                                 alt="Networks and Redundancy Group Assignment Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/freshman2_3.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Networks and Redundancy Group
+                                    Assignment</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#freshmanCarousel2"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#freshmanCarousel2"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 2</h3>
+                     <p>In the second semester, we focused more on the internet,
+                        specifically the conceptual and ethical side of
+                        things. We also learned more about concepts we needed to
+                        know for the AP Computer Science Principles
+                        exam. </p>
+                     <p>One project we worked on was the Internet Dilemmas
+                        Project.
+                        During the project, we learned about
+                        technological dilemmas that relate to the use of the
+                        internet. One particular issue that we concentrated
+                        on was net neutrality and the potential effects of
+                        losing
+                        it. </p>
+                     <p>Another assignment we worked on was an activity on
+                        crowdsourced data. I chose to research big data and
+                        its positive impact. Overall, we learned how merging
+                        resources and computing power can lead to
+                        discoveries and information.</p>
+                     <p>My final work is a group assignment about networks. This
+                        assignment taught us about networks and how they
+                        are created redundantly on purpose. To ensure that
+                        clients
+                        can still connect during an outage, other
+                        paths must be available for information to get across.
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="col-xl-4 col-md-8">
-            <h3 class="text-center py-1">Semester 2</h3>
-            <p>In the second semester, we focused more on the internet, specifically the conceptual and ethical side of
-                things. We also learned more about concepts we needed to know for the AP Computer Science Principles
-                exam. </p>
-            <p>One project we worked on was the Internet Dilemmas Project. During the project, we learned about
-                technological dilemmas that relate to the use of the internet. One particular issue that we concentrated
-                on was net neutrality and the potential effects of losing it. </p>
-            <p>Another assignment we worked on was an activity on crowdsourced data. I chose to research big data and
-                its positive impact. Overall, we learned how merging resources and computing power can lead to
-                discoveries and information.</p>
-            <p>My final work is a group assignment about networks. This assignment taught us about networks and how they
-                are created redundantly on purpose. To ensure that clients can still connect during an outage, other
-                paths must be available for information to get across. </p>
-        </div>
-    </div>
 
-    <h2 class="text-center pt-4">Sophomore (AP Computer Science A)</h2>
-    <!--Sophomore Semester 1-->
+            <div id="sophomore" class="col-12">
+               <h2 class="text-center pt-4">Sophomore (AP Computer Science
+                  A)</h2>
 
-    <div class="row justify-content-center gx-5 py-2">
-        <div class="col-xl-6 col-md-8 align-self-center">
-            <div class="carousel slide bg-secondary" data-bs-interval="false" id="sophomoreCarousel1">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#sophomoreCarousel1" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#sophomoreCarousel1"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#sophomoreCarousel1"
-                            type="button"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <img alt="KarelTheRobot Maze Solver Image" class="d-block w-100"
-                             src="files/carouselImages/sophomore1_1.png">
-                        <div class="carousel-caption border border-white bg-dark ">
-                            <h5>KarelTheRobot Maze Solver</h5>
+               <!--Sophomore Semester 1-->
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide bg-secondary"
+                        data-bs-interval="false"
+                        id="sophomoreCarousel1">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#sophomoreCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#sophomoreCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#sophomoreCarousel1"
+                              type="button"></button>
                         </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <img alt="Grocery List Program Image" class="d-block w-100"
-                             src="files/carouselImages/sophomore1_2.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Java Grocery List Program</h5>
+                        <div class="carousel-inner">
+                           <!-- Item 1 -->
+                           <div class="carousel-item active">
+                              <img alt="KarelTheRobot Maze Solver Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/sophomore1_1.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark ">
+                                 <h5>KarelTheRobot Maze Solver</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <img alt="Grocery List Program Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/sophomore1_2.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Java Grocery List Program</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <img alt="Fibonacci Program Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/sophomore1_3.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Fibonacci Program</h5>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="carousel-item">
-                        <img alt="Fibonacci Program Image" class="d-block w-100"
-                             src="files/carouselImages/sophomore1_3.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Fibonacci Program</h5>
-                        </div>
-                    </div>
-                </div>
 
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#sophomoreCarousel1"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#sophomoreCarousel1"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#sophomoreCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#sophomoreCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 1</h3>
+                     <p>In the first semester of the class, we learned about
+                        Java and
+                        object-oriented programming. For example,
+                        we learned how to use classes and inheritance to achieve
+                        our
+                        goals. </p>
+                     <p>Our first major project was a maze solver using Karel
+                        the
+                        Robot. This project summarised what we learned
+                        about superclasses and subclasses. The robot follows the
+                        right
+                        wall to reach the end of the maze.</p>
+                     <p>Another project we worked on was the Grocery List
+                        program.
+                        This assignment introduced us to string
+                        formatting and user input. The program has the user
+                        input
+                        prices for five items. Afterwards, their
+                        prices are summed and provided to the user. </p>
+                     <p>One of the final assignments we worked on that semester
+                        was
+                        the Fibonacci program. The purpose of having
+                        us write this program was to help us become more
+                        comfortable
+                        with recursive programming. The program
+                        returns the Fibonacci sequence term number that the user
+                        provides. </p>
+                  </div>
+               </div>
+
+               <!--Sophomore Semester 2-->
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide" data-bs-interval="false"
+                        id="sophomoreCarousel2">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#sophomoreCarousel2"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#sophomoreCarousel2"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#sophomoreCarousel2"
+                              type="button"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <!-- Item 1 -->
+                           <div class="carousel-item active">
+                              <div class="row">
+                                 <img alt="BondMovieSeries Program Image"
+                                    class="d-block w-100"
+                                    src="files/carouselImages/sophomore2_1.png">
+                              </div>
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>BondMovieSeries Program</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <img alt="Store Program Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/sophomore2_2.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Store Program</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <img alt="Animals and Farm Program Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/sophomore2_3.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Animals and Farm Program</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#sophomoreCarousel2"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#sophomoreCarousel2"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 2</h3>
+                     <p>During the second semester, we learned more about Java
+                        and
+                        began preparing for the AP Computer Science A
+                        exam. Primarily, we learned more about ArrayLists,
+                        sorting,
+                        and inheritance. </p>
+                     <p>One of the first programs we wrote in the second
+                        semester was
+                        the BondMovieSeries class. The program
+                        loads statistics about several movies, sorts them, and
+                        displays them in a list. Writing this program
+                        taught us more about sorting algorithms like bubble sort
+                        and
+                        Big O notation. </p>
+                     <p>Another program we wrote is the Store program. The
+                        program
+                        imports a list of items with ids and inventory
+                        values which are sorted and then can be searched. This
+                        program
+                        was particularly significant because it
+                        introduced us to the Comparable interface, binary
+                        searches,
+                        and another sorting algorithm, merge
+                        sort. </p>
+                     <p>The last classes we wrote before we took the AP test
+                        were the
+                        Farm class, the Animal interface, and the
+                        farm animal subclasses. This assignment taught us how to
+                        create and implement an interface into
+                        subclasses. It also taught us how interfaces can enforce
+                        similar methods between classes. </p>
+                  </div>
+               </div>
+
             </div>
-        </div>
-        <div class="col-xl-4 col-md-8">
-            <h3 class="text-center py-1">Semester 1</h3>
-            <p>In the first semester of the class, we learned about Java and object-oriented programming. For example,
-                we learned how to use classes and inheritance to achieve our goals. </p>
-            <p>Our first major project was a maze solver using Karel the Robot. This project summarised what we learned
-                about superclasses and subclasses. The robot follows the right wall to reach the end of the maze.</p>
-            <p>Another project we worked on was the Grocery List program. This assignment introduced us to string
-                formatting and user input. The program has the user input prices for five items. Afterwards, their
-                prices are summed and provided to the user. </p>
-            <p>One of the final assignments we worked on that semester was the Fibonacci program. The purpose of having
-                us write this program was to help us become more comfortable with recursive programming. The program
-                returns the Fibonacci sequence term number that the user provides. </p>
-        </div>
-    </div>
-    <!--Sophomore Semester 2-->
 
-    <div class="row justify-content-center gx-5 py-2">
-        <div class="col-xl-6 col-md-8 align-self-center">
-            <div class="carousel slide" data-bs-interval="false" id="sophomoreCarousel2">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#sophomoreCarousel2" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#sophomoreCarousel2"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#sophomoreCarousel2"
-                            type="button"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <img alt="BondMovieSeries Program Image" class="d-block w-100"
-                                 src="files/carouselImages/sophomore2_1.png">
-                        </div>
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>BondMovieSeries Program</h5>
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <img alt="Store Program Image" class="d-block w-100"
-                             src="files/carouselImages/sophomore2_2.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Store Program</h5>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="carousel-item">
-                        <img alt="Animals and Farm Program Image" class="d-block w-100"
-                             src="files/carouselImages/sophomore2_3.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Animals and Farm Program</h5>
-                        </div>
-                    </div>
-                </div>
+            <div id="junior" class="col-12">
+               <h2 class="text-center pt-4">Junior (IB HLY1 Computer Science and
+                  Mechatronics)</h2>
+               <!--Junior Semester 1-->
 
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#sophomoreCarousel2"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#sophomoreCarousel2"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide bg-secondary"
+                        data-bs-interval="false"
+                        id="juniorCarousel1">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#juniorCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#juniorCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#juniorCarousel1"
+                              type="button"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <!-- Item 1 -->
+                           <div class="carousel-item active">
+                              <img alt="Implementing a LinkedList Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/junior1_1.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark ">
+                                 <h5>Implementing a LinkedList in Java</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <img alt="Implementing a BinaryTree Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/junior1_2.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Implementing a BinaryTree in Java</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <img alt="Email Directory Program Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/junior1_3.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Email Directory Program in Java</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#juniorCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#juniorCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 1</h3>
+                     <p>In the first semester of IBHL Y1, we mainly focused on
+                        learning how to use and implement data structures.
+                        We also used many recursive methods to understand how
+                        recursive programming can be more beneficial than
+                        non-recursive in many situations. </p>
+                     <p>The first data structure we learned how to implement was
+                        a
+                        LinkedList. While writing the class, we
+                        learned how the data is stored and how a LinkedList is
+                        iterated. Because LinkedLists use nodes and
+                        references to next and previous nodes, a LinkedList
+                        doesn’t
+                        waste memory and can grow and shrink as
+                        needed. </p>
+                     <p>Another data structure we implemented was a binary tree.
+                        Similar to a LinkedList, a binary tree uses
+                        nodes that have references to child nodes. Implementing
+                        the
+                        data structure taught us how binary trees
+                        function and the pros and cons of using them. For
+                        example,
+                        although searching can be more efficient,
+                        modifying a tree can take much longer.</p>
+                     <p>Finally, we also learned how to use maps and sets. The
+                        program
+                        loads a list of names and emails and
+                        allows the user to search by last name. Maps allowed us
+                        to map
+                        each name to an email address. Using maps
+                        and sets made it easier to search and manage the list of
+                        data.
+                     </p>
+                  </div>
+               </div>
+
+               <!--Junior Semester 2-->
+
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide bg-secondary"
+                        data-bs-interval="false"
+                        id="juniorCarousel2">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#juniorCarousel2"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#juniorCarousel2"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#juniorCarousel2"
+                              type="button"></button>
+                        </div>
+                        <div class="carousel-inner">
+                           <!-- Item 1 -->
+                           <div class="carousel-item active">
+                              <img alt="Hashing and Hashcodes Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/junior2_1.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark ">
+                                 <h5>Hashing and Hashcodes in Java</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <img
+                                 alt="Implementing a PriorityQueue in Java Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/junior2_2.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Implementing a PriorityQueue in Java</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <img alt='Mechatronics "Upper Housing" Part Image'
+                                 class="d-block w-100"
+                                 src="files/carouselImages/junior2_3.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Mechatronics "Upper Housing" Part in
+                                    Solidworks</h5>
+                              </div>
+                           </div>
+                        </div>
+
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#juniorCarousel2"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#juniorCarousel2"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 2</h3>
+                     <p>During the second semester of IBHL Y1 Computer Science,
+                        our
+                        focus expanded beyond programming and delved into
+                        practical
+                        applications. In my Mechatronics class, we moved on from
+                        creating simple parts to recreating parts with more
+                        complex
+                        geometry. Within both classes, we explored various
+                        topics and
+                        tools that allowed us to enhance and broaden our
+                        understanding
+                        of data structures and design principles.</p>
+                     <p>One significant project we worked on involved the
+                        utilization
+                        of hashing and hash codes. Our data consisted of “Item”
+                        objects that had an ID and inventory number. By using
+                        hash
+                        codes, we were able to map each item’s ID to its
+                        inventory
+                        number, optimizing the retrieval process. Understanding
+                        hashing and hash codes provided us with a powerful tool
+                        for
+                        data organization and retrieval, contributing to the
+                        overall
+                        efficiency of our program.</p>
+                     <p>Furthermore, we explored the implementation of a
+                        priority
+                        queue, a data structure that maintains a collection of
+                        elements with assigned priorities. Building our own
+                        priority
+                        queue allowed us to delve deeper into the algorithms
+                        involved
+                        in efficiently managing prioritized data. This knowledge
+                        equipped us with a powerful tool for handling scenarios
+                        where
+                        efficient sorting and prioritization of elements are
+                        crucial.</p>
+                     <p>Finally, In my Mechatronics class, we recreated more
+                        advanced
+                        parts in SolidWorks. One part we created, titled “Upper
+                        Housing,” involved the application of more advanced
+                        SolidWorks
+                        tools such as lofting, sweeping, shelling. With these
+                        tools at
+                        our disposal, we were able to create complex
+                        three-dimensional
+                        models. By creating this part, I was able to gain a
+                        better
+                        understanding of SolidWork’s more advanced features.</p>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="col-xl-4 col-md-8">
-            <h3 class="text-center py-1">Semester 2</h3>
-            <p>During the second semester, we learned more about Java and began preparing for the AP Computer Science A
-                exam. Primarily, we learned more about ArrayLists, sorting, and inheritance. </p>
-            <p>One of the first programs we wrote in the second semester was the BondMovieSeries class. The program
-                loads statistics about several movies, sorts them, and displays them in a list. Writing this program
-                taught us more about sorting algorithms like bubble sort and Big O notation. </p>
-            <p>Another program we wrote is the Store program. The program imports a list of items with ids and inventory
-                values which are sorted and then can be searched. This program was particularly significant because it
-                introduced us to the Comparable interface, binary searches, and another sorting algorithm, merge
-                sort. </p>
-            <p>The last classes we wrote before we took the AP test were the Farm class, the Animal interface, and the
-                farm animal subclasses. This assignment taught us how to create and implement an interface into
-                subclasses. It also taught us how interfaces can enforce similar methods between classes. </p>
-        </div>
-    </div>
 
-    <h2 class="text-center pt-4">Junior (IB HLY1 Computer Science and Mechatronics)</h2>
-    <!--Junior Semester 1-->
+            <div id="senior" class="col-12">
+               <h2 class="text-center pt-4">Senior (IB HLY2 Computer Science and
+                  C++)</h2>
+               <!--Senior Semester 1-->
 
-    <div class="row justify-content-center gx-5 py-2">
-        <div class="col-xl-6 col-md-8 align-self-center">
-            <div class="carousel slide bg-secondary" data-bs-interval="false" id="juniorCarousel1">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#juniorCarousel1" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#juniorCarousel1"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#juniorCarousel1"
-                            type="button"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <img alt="Implementing a LinkedList Image" class="d-block w-100"
-                             src="files/carouselImages/junior1_1.png">
-                        <div class="carousel-caption border border-white bg-dark ">
-                            <h5>Implementing a LinkedList in Java</h5>
+               <div class="row justify-content-center gx-5 py-2">
+                  <div class="col-xl-6 col-md-8 align-self-center">
+                     <div class="carousel slide bg-secondary"
+                        data-bs-interval="false"
+                        id="seniorCarousel1">
+                        <div class="carousel-indicators">
+                           <button aria-current="true" aria-label="Slide 1"
+                              class="active" data-bs-slide-to="0"
+                              data-bs-target="#seniorCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 2" data-bs-slide-to="1"
+                              data-bs-target="#seniorCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 3" data-bs-slide-to="2"
+                              data-bs-target="#seniorCarousel1"
+                              type="button"></button>
+                           <button aria-label="Slide 4" data-bs-slide-to="3"
+                              data-bs-target="#seniorCarousel1"
+                              type="button"></button>
                         </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <img alt="Implementing a BinaryTree Image" class="d-block w-100"
-                             src="files/carouselImages/junior1_2.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Implementing a BinaryTree in Java</h5>
+                        <div class="carousel-inner">
+                           <!-- Item 1a -->
+                           <div class="carousel-item active">
+                              <img alt="Implementing a LinkedList Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/senior1_1a.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark ">
+                                 <h5>Vue/C# API Backend Single Page Web App</h5>
+                              </div>
+                           </div>
+                           <!-- Item 1b -->
+                           <div class="carousel-item">
+                              <img alt="Implementing a LinkedList Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/senior1_1b.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark ">
+                                 <h5>Vue/C# API Backend Single Page Web App</h5>
+                              </div>
+                           </div>
+                           <!-- Item 2 -->
+                           <div class="carousel-item">
+                              <img alt="Implementing a BinaryTree Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/senior1_2.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Word Counter in C++</h5>
+                              </div>
+                           </div>
+                           <!-- Item 3 -->
+                           <div class="carousel-item">
+                              <img alt="Email Directory Program Image"
+                                 class="d-block w-100"
+                                 src="files/carouselImages/senior1_3.png">
+                              <div
+                                 class="carousel-caption border border-white bg-dark">
+                                 <h5>Linked List and Stack Implementation in
+                                    C++</h5>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="carousel-item">
-                        <img alt="Email Directory Program Image" class="d-block w-100"
-                             src="files/carouselImages/junior1_3.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Email Directory Program in Java</h5>
-                        </div>
-                    </div>
-                </div>
 
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#juniorCarousel1"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#juniorCarousel1"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                        <button class="carousel-control-prev"
+                           data-bs-slide="prev"
+                           data-bs-target="#seniorCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-prev-icon"></span>
+                           <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next"
+                           data-bs-slide="next"
+                           data-bs-target="#seniorCarousel1"
+                           type="button">
+                           <span aria-hidden="true"
+                              class="carousel-control-next-icon"></span>
+                           <span class="visually-hidden">Next</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-md-8">
+                     <h3 class="text-center py-1">Semester 1</h3>
+                     <p>The main focus of our first semester of IBHL Computer
+                        Science Year 2 was completing our internal assessment,
+                        consisting of developing an application for a client for
+                        planning to implementation. At the same time, in my C++
+                        programming class, we learned everything from the
+                        previous year's Java lessons. </p>
+                     <p>Through individual research and testing, I learned how
+                        to use C# and Typescript to develop a web application
+                        with Vue.js and a REST API backend. The web app
+                        interfaced with a Cosmos database and authentication on
+                        Azure web services. I had only developed a static
+                        website before, so working with web services, learning
+                        how modern websites work, and learning MVC API
+                        structuring was very interesting. </p>
+                     <p>One lab we did in C++ involved reading and iterating
+                        through the characters in a file. Then we counted and
+                        kept track of how many times each word occurred. This
+                        lab involved the various subjects we learned in the
+                        previous labs including vectors, iostreams, and print
+                        formatting. I also learned how to use maps and the
+                        standard algorithm library. </p>
+                     <p>Finally, I learned how to create classes in C++ through
+                        the creation of a linked list and stack class. I learned
+                        how to create header classes to define a class and use a
+                        separate .cpp extension file to implement the class.
+                        Doing this ensures that if one file is changed, not all
+                        files have to be recompiled. It also helps to reduce
+                        complexity and the total number of lines of code. I
+                        gained a better understanding of C++'s
+                        redundancy-reducing abilities.
+                     </p>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="col-xl-4 col-md-8">
-            <h3 class="text-center py-1">Semester 1</h3>
-            <p>In the first semester of IBHL Y1, we mainly focused on learning how to use and implement data structures.
-                We also used many recursive methods to understand how recursive programming can be more beneficial than
-                non-recursive in many situations. </p>
-            <p>The first data structure we learned how to implement was a LinkedList. While writing the class, we
-                learned how the data is stored and how a LinkedList is iterated. Because LinkedLists use nodes and
-                references to next and previous nodes, a LinkedList doesn’t waste memory and can grow and shrink as
-                needed. </p>
-            <p>Another data structure we implemented was a binary tree. Similar to a LinkedList, a binary tree uses
-                nodes that have references to child nodes. Implementing the data structure taught us how binary trees
-                function and the pros and cons of using them. For example, although searching can be more efficient,
-                modifying a tree can take much longer.</p>
-            <p>Finally, we also learned how to use maps and sets. The program loads a list of names and emails and
-                allows the user to search by last name. Maps allowed us to map each name to an email address. Using maps
-                and sets made it easier to search and manage the list of data. </p>
-        </div>
-    </div>
+         </div>
 
-    <!--Junior Semester 2-->
+      </div>
 
-    <div class="row justify-content-center gx-5 py-2">
-        <div class="col-xl-6 col-md-8 align-self-center">
-            <div class="carousel slide bg-secondary" data-bs-interval="false" id="juniorCarousel2">
-                <div class="carousel-indicators">
-                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                            data-bs-target="#juniorCarousel2" type="button"></button>
-                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#juniorCarousel2"
-                            type="button"></button>
-                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#juniorCarousel2"
-                            type="button"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Item 1 -->
-                    <div class="carousel-item active">
-                        <img alt="Hashing and Hashcodes Image" class="d-block w-100"
-                             src="files/carouselImages/junior2_1.png">
-                        <div class="carousel-caption border border-white bg-dark ">
-                            <h5>Hashing and Hashcodes in Java</h5>
-                        </div>
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="carousel-item">
-                        <img alt="Implementing a PriorityQueue in Java Image" class="d-block w-100"
-                             src="files/carouselImages/junior2_2.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Implementing a PriorityQueue in Java</h5>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="carousel-item">
-                        <img alt='Mechatronics "Upper Housing" Part Image' class="d-block w-100"
-                             src="files/carouselImages/junior2_3.png">
-                        <div class="carousel-caption border border-white bg-dark">
-                            <h5>Mechatronics "Upper Housing" Part in Solidworks</h5>
-                        </div>
-                    </div>
-                </div>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script
+         src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/courses.js"></script>
+   </body>
 
-                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#juniorCarousel2"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#juniorCarousel2"
-                        type="button">
-                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-8">
-            <h3 class="text-center py-1">Semester 2</h3>
-            <p>During the second semester of IBHL Y1 Computer Science, our focus expanded beyond programming and delved into practical applications. In my Mechatronics class, we moved on from creating simple parts to recreating parts with more complex geometry. Within both classes, we explored various topics and tools that allowed us to enhance and broaden our understanding of data structures and design principles.</p>
-            <p>One significant project we worked on involved the utilization of hashing and hash codes. Our data consisted of “Item” objects that had an ID and inventory number. By using hash codes, we were able to map each item’s ID to its inventory number, optimizing the retrieval process. Understanding hashing and hash codes provided us with a powerful tool for data organization and retrieval, contributing to the overall efficiency of our program.</p>
-            <p>Furthermore, we explored the implementation of a priority queue, a data structure that maintains a collection of elements with assigned priorities. Building our own priority queue allowed us to delve deeper into the algorithms involved in efficiently managing prioritized data. This knowledge equipped us with a powerful tool for handling scenarios where efficient sorting and prioritization of elements are crucial.</p>
-            <p>Finally, In my Mechatronics class, we recreated more advanced parts in SolidWorks. One part we created, titled “Upper Housing,” involved the application of more advanced SolidWorks tools such as lofting, sweeping, shelling. With these tools at our disposal, we were able to create complex three-dimensional models. By creating this part, I was able to gain a better understanding of SolidWork’s more advanced features.</p>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="js/courses.js"></script>
-</body>
-
-<!--main page-->
+   <!--main page-->
 
 </html>
