@@ -6,17 +6,13 @@
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1" name="viewport">
       <script crossorigin="anonymous"
-         src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
-      <link crossorigin="anonymous"
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-         rel="stylesheet">
-      <link href="css/main.css" rel="stylesheet">
-      <link href="css/index.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat"
-         rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Manrope"
-         rel="stylesheet">
+         src="https://use.fontawesome.com/releases/v6.1.0/js/all.js">
+      </script>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <link href="css/main.css" rel="stylesheet">
+       <link href="css/index.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet">
 
    </head>
    <body class="bg-dark">
@@ -120,11 +116,11 @@
             <div class="container text-center mt-5">
                <div class="row text-light">
                   <div class="col-10 mx-auto">
-                     <h2 class="mb-3">See:</h2>
+                     <h2 class="mb-3">See my</h2>
                      <a class="btn btn-light abt-btn" href="#skills">
                         Skills</a>
                      <a class="btn btn-light abt-btn" href="#projects">
-                        Projects</a>
+                        Portfolio</a>
                      <br>
                      <a class="btn btn-light abt-btn" href="internship.html">
                         Internship</a>
@@ -136,10 +132,9 @@
          </div>
       </section>
 
-      <section class="d-flex align-items-center" id="skills">
+      <section class="container-fluid d-flex align-items-center" id="skills">
          <div class="container text-center text-light">
-            <h1 style="padding-bottom: 60px">Some areas I have experience
-               in:</h1>
+            <h1 style="padding-bottom: 60px">My Skills</h1>
             <ul>
                <li>
                   <iconify-icon icon="logos:python"></iconify-icon>
@@ -151,8 +146,8 @@
                </li>
                <li>
                   <iconify-icon
-                          icon="vscode-icons:file-type-c3"></iconify-icon>
-                  <p>C++</p>
+                          icon="vscode-icons:file-type-c"></iconify-icon>
+                  <p>C</p>
                </li>
                <li>
                   <iconify-icon
@@ -248,15 +243,174 @@
       </section>
 
       <section id="projects">
-         <div class="container text-light">
-            <h1 class="text-center">Some of my projects</h1>
+         <div class="container-xxl text-light">
+            <h1 class="text-center">My Portfolio</h1>
+             <div class="row project align-items-center">
+                 <div class="col-lg-6 col-sm-12">
+                     <div class="carousel slide" data-bs-interval="false"
+                          id="star_carousel">
+                         <div class="carousel-indicators">
+                             <button aria-current="true" aria-label="Slide 1"
+                                     class="active" data-bs-slide-to="0"
+                                     data-bs-target="#star_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 2" data-bs-slide-to="1"
+                                     data-bs-target="#star_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 3" data-bs-slide-to="2"
+                                     data-bs-target="#star_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 4" data-bs-slide-to="3"
+                                     data-bs-target="#star_carousel"
+                                     type="button"></button>
+                         </div>
+                         <div class="carousel-inner">
+                             <!-- Item 1 -->
+                             <div class="carousel-item active">
+                                 <a href="files/projects/star0.png">
+                                     <img alt="PCB"
+                                          class="d-block w-100"
+                                          src="files/projects/star0.png">
+                                 </a>
+
+                             </div>
+                             <!-- Item 2 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/star1.png">
+                                     <img alt="PCB in Av Bay"
+                                          class="d-block w-100"
+                                          src="files/projects/star1.png">
+                                 </a>
+                             </div>
+                             <!-- Item 3 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/star2.png">
+                                     <img alt="Schematic"
+                                          class="d-block w-100"
+                                          src="files/projects/star2.png">
+                                 </a>
+                             </div>
+                             <!-- Item 4 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/star3.png">
+                                     <img alt="Rocket Picture"
+                                          class="d-block w-100"
+                                          src="files/projects/star3.png">
+                                 </a>
+                             </div>
+                         </div>
+                         <button class="carousel-control-prev"
+                                 data-bs-slide="prev"
+                                 data-bs-target="#star_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-prev-icon"></span>
+                             <span class="visually-hidden">Previous</span>
+                         </button>
+                         <button class="carousel-control-next"
+                                 data-bs-slide="next"
+                                 data-bs-target="#star_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-next-icon"></span>
+                             <span class="visually-hidden">Next</span>
+                         </button>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-sm-12">
+                     <h2>Starflower Avionics Board</h2>
+                     <p class="lead">
+                         Avionics board built for the STAR onboarding project for our rocket Starflower (slide 4). The board uses an ESP32-S3-WROOM-1-N8 and features a working barometer and IMU. Code for interfacing with flash memory is W.I.P. Telemetry recording on ESP32 flash begins when IMU detects sufficient acceleration (takeoff!).
+                     </p>
+                 </div>
+             </div>
+             <div class="row project align-items-center">
+                 <div class="col-lg-6 col-sm-12">
+                     <div class="carousel slide" data-bs-interval="false"
+                          id="stm_carousel">
+                         <div class="carousel-indicators">
+                             <button aria-current="true" aria-label="Slide 1"
+                                     class="active" data-bs-slide-to="0"
+                                     data-bs-target="#stm_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 2" data-bs-slide-to="1"
+                                     data-bs-target="#stm_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 3" data-bs-slide-to="2"
+                                     data-bs-target="#stm_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 4" data-bs-slide-to="3"
+                                     data-bs-target="#stm_carousel"
+                                     type="button"></button>
+                         </div>
+                         <div class="carousel-inner">
+                             <!-- Item 1 -->
+                             <div class="carousel-item active">
+                                 <a href="files/projects/stm0.png">
+                                     <img alt="STM Macroboard Front"
+                                          class="d-block w-100"
+                                          src="files/projects/stm0.png">
+                                 </a>
+
+                             </div>
+                             <!-- Item 2 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/stm1.png">
+                                    <img alt="STM Macroboard Back"
+                                         class="d-block w-100"
+                                         src="files/projects/stm1.png">
+                                 </a>
+                             </div>
+                             <!-- Item 3 -->
+                             <div class="carousel-item">
+                                     <a href="files/projects/stm2.png">
+                                         <img alt="PCB Render"
+                                              class="d-block w-100"
+                                              src="files/projects/stm2.png">
+                                     </a>
+                             </div>
+                             <!-- Item 4 -->
+                             <div class="carousel-item">
+                                     <a href="files/projects/stm3.png">
+                                         <img alt="Schematic"
+                                              class="d-block w-100"
+                                              src="files/projects/stm3.png">
+                                     </a>
+                             </div>
+                         </div>
+                         <button class="carousel-control-prev"
+                                 data-bs-slide="prev"
+                                 data-bs-target="#stm_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-prev-icon"></span>
+                             <span class="visually-hidden">Previous</span>
+                         </button>
+                         <button class="carousel-control-next"
+                                 data-bs-slide="next"
+                                 data-bs-target="#stm_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-next-icon"></span>
+                             <span class="visually-hidden">Next</span>
+                         </button>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-sm-12">
+                     <h2> STM32 Mechanical Keyboard</h2>
+                     <p class="lead">
+                         I am currently working on building an STM32-based mechanical keyboard. The final version will have an I2C mini-OLED screen, pair of digital encoder knobs, and fully addressable RGB LED lighting. I eventually plan to have an aluminum case machined to house the PCB.
+                         Instead of KiCad, I'm using Altium Designer for schematic and layout. I've had the proof-of-concept macro-pad manufactured and have finished hand-soldering (pictured left), and have just started bringup.
+                     </p>
+                 </div>
+             </div>
             <div class="row project align-items-center">
                <div class="col-lg-6 col-sm-12">
-                  <img alt="Mechanical Keyboard Image" class="img-fluid"
-                     src="files/projects/keyboard.png">
+                  <img alt="Arduino Keyboard Image" class="img-fluid"
+                     src="files/projects/arduino-keyboard.png">
                </div>
                <div class="col-lg-6 col-sm-12">
-                  <h2> Custom Mechanical Keyboard</h2>
+                  <h2> Arduino Mechanical Keyboard</h2>
                   <p class="lead">
                      For this project, I designed and built my own Arduino
                      mechanical keyboard. Using KiCAD, I created
