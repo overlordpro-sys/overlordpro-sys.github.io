@@ -85,16 +85,12 @@
                   <h2>Brent Lee</h2>
                   <h5>Electrical Engineering and Computer Science @ University of California, Berkeley</h5>
                   <span></span>
-                  <p class="lead">I'm a college student with a passion for
-                     computer engineering. <br>
-                     I'm highly interested in circuit boards, integrated circuits, embedded
-                     systems, machine learning, and computer vision.
+                  <p class="lead">I'm an EECS student at UC Berkeley, class of 2028, focused on digital design and silicon. I'm most interested in SoCs and front-end work: RTL design, verification, and computer architecture.
                   </p>
-                  <p class="lead">I'm currently enrolled at UC Berkeley pursuing a Bachelor's Degree in Electrical Engineering and Computer Science.
+                  <p class="lead">Most recently I designed a pipelined RISC-V processor in Berkeley's ASIC lab and took it from SystemVerilog to a routed Skywater 130nm layout. It was an Apple Design Project finalist. I also lead a team designing the battery management control board for CalSol, Berkeley's solar car team.
                   </p>
-                  <p class="lead">I'm fascinated by the capabilities of
-                     artificial intelligence and want to explore AI as I
-                     pursue my interests in computer engineering.</p>
+                  <p class="lead">I interned with Boeing's Electromagnetic Effects team, where I ran transient pin injection testing for component qualification and built a Python tool that uses LLMs to generate certification reports from ground test procedures. Before that, at The Aerospace Corporation, I assembled and tested an RF front end for a satellite receiver and built a software-defined radio protocol stack with packet framing and error correction.
+                  </p>
                   <div class="social d-flex justify-content-center mt-4"
                      id="social2">
                      <a class="mx-2"
@@ -245,6 +241,114 @@
       <section id="projects">
          <div class="container-xxl text-light">
             <h1 class="text-center">My Portfolio</h1>
+             <div class="row project align-items-center">
+                 <div class="col-lg-6 col-sm-12">
+                     <div class="carousel slide" data-bs-interval="false"
+                          id="riscv_carousel">
+                         <div class="carousel-indicators">
+                             <button aria-current="true" aria-label="Slide 1"
+                                     class="active" data-bs-slide-to="0"
+                                     data-bs-target="#riscv_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 2"
+                                     data-bs-slide-to="1"
+                                     data-bs-target="#riscv_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 3"
+                                     data-bs-slide-to="2"
+                                     data-bs-target="#riscv_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 4"
+                                     data-bs-slide-to="3"
+                                     data-bs-target="#riscv_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 5"
+                                     data-bs-slide-to="4"
+                                     data-bs-target="#riscv_carousel"
+                                     type="button"></button>
+                         </div>
+                         <div class="carousel-inner">
+                             <!-- Item 1 -->
+                             <div class="carousel-item active">
+                                 <a href="files/projects/eecs151_layout.png">
+                                     <img alt="Post place-and-route layout in Cadence Innovus"
+                                          class="d-block w-100"
+                                          src="files/projects/eecs151_layout.png">
+                                 </a>
+                             </div>
+                             <!-- Item 2 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/eecs151_datapath.png">
+                                     <img alt="Processor datapath diagram"
+                                          class="d-block w-100"
+                                          src="files/projects/eecs151_datapath.png">
+                                 </a>
+                             </div>
+                             <!-- Item 3 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/eecs151_cache_fsm.png">
+                                     <img alt="Direct-mapped cache FSM and SRAM bank layout"
+                                          class="d-block w-100"
+                                          src="files/projects/eecs151_cache_fsm.png">
+                                 </a>
+                             </div>
+                             <!-- Item 4 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/eecs151_2way_cache.png">
+                                     <img alt="2-way set-associative write-back cache diagram"
+                                          class="d-block w-100"
+                                          src="files/projects/eecs151_2way_cache.png">
+                                 </a>
+                             </div>
+                             <!-- Item 5 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/eecs151_fom.png">
+                                     <img alt="Figure of merit across design iterations"
+                                          class="d-block w-100"
+                                          src="files/projects/eecs151_fom.png">
+                                 </a>
+                             </div>
+                         </div>
+                         <button class="carousel-control-prev"
+                                 data-bs-slide="prev"
+                                 data-bs-target="#riscv_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-prev-icon"></span>
+                             <span class="visually-hidden">Previous</span>
+                         </button>
+                         <button class="carousel-control-next"
+                                 data-bs-slide="next"
+                                 data-bs-target="#riscv_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-next-icon"></span>
+                             <span class="visually-hidden">Next</span>
+                         </button>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-sm-12">
+                     <h2>RISC-V Processor ASIC</h2>
+                     <h5 class="text-secondary">EECS 151 ASIC Lab &middot; Apple Design Project Finalist</h5>
+                     <p class="lead">
+                         With a partner, I built a 3-stage pipelined RV32I processor in SystemVerilog: fetch, a combined decode/execute stage, and a combined memory/writeback stage, with register-file bypassing and writeback-to-execute forwarding. The write-back, write-allocate caches are built from Skywater 130nm SRAM macros. We took the design through the full RTL-to-GDS flow (VCS, Design Compiler, and Innovus via Hammer), closed setup and hold timing after place-and-route, and ran the full test suite against the routed netlist.
+                     </p>
+                     <p class="lead">
+                         I owned the optimization against the competition's energy &times; area figure of merit, trying 3-, 4-, and 5-stage pipelines, a branch predictor, set-associative and direct-mapped caches at several sizes, and different SRAM placements. The 5-stage pipeline gained about 10 MHz but lost more than that in extra cycles. The 64-entry branch predictor nearly doubled core power for only a small drop in cycle count, so I cut it. Small 1 kB direct-mapped caches beat both the larger caches and the set-associative ones. Clock-gating the datapath and caches and relaxing the clock to about 24 MHz brought the core to 3.8 mW in 0.86 mm&sup2;, which took the figure of merit from about 10 to 42.2 and made the design an Apple Design Project finalist.
+                     </p>
+                     <!-- Uncomment if the repo is public
+                     <div class="d-flex">
+                        <a class="btn btn-lg btn-primary"
+                           href="https://github.com/overlordpro-sys/eecs151-asic-project"
+                           rel="noopener noreferrer"
+                           target="_blank">
+                           <iconify-icon icon="mdi:github" inline></iconify-icon>
+                           Github
+                        </a>
+                     </div>
+                     -->
+                 </div>
+             </div>
              <div class="row project align-items-center">
                  <div class="col-lg-6 col-sm-12">
                      <div class="carousel slide" data-bs-interval="false"
