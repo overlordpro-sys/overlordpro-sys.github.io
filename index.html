@@ -64,8 +64,12 @@
             </p>
             <div class="hero-actions">
                 <a class="btn btn-primary" href="#projects">
-                    View my work
+                    View portfolio
                     <iconify-icon icon="mdi:arrow-right" aria-hidden="true"></iconify-icon>
+                </a>
+                <a class="btn" href="#skills">
+                    <iconify-icon icon="mdi:chip" aria-hidden="true"></iconify-icon>
+                    Skills
                 </a>
                 <a class="btn" href="resume.html">
                     <iconify-icon icon="mdi:file-document-outline" aria-hidden="true"></iconify-icon>
@@ -151,8 +155,10 @@
                     </div>
                     <p class="timeline-org">Berkeley Solar Car (CalSol)</p>
                     <ul>
-                        <li>Leading a 3-person team designing the 4-layer battery management control PCB for the Gen XI car.</li>
-                        <li>Designed the isoSPI interfaces to the battery module boards, plus contactor, thermal management, and status circuitry.</li>
+                        <li>Leading a 3-person team on the Gen 11 car's battery management system; designed its 4-layer KiCad controller board around the team's ESP32-S3 module.</li>
+                        <li>Built four isoSPI ports to the battery module boards from LTC6820 transceivers and pulse transformers, with isolation moats and a 120&nbsp;&Omega; differential impedance target coordinated with our sponsor fab.</li>
+                        <li>Designed contactor switching, eight-fan PWM thermal management, and an OLED, LED, and buzzer status interface.</li>
+                        <li>Now leading the schematic revision: 12&nbsp;V / 24&nbsp;V CAN input, a gate driver for the contactor FETs, and an RS485 link so the pack current sensor reports straight to the BMS.</li>
                     </ul>
                 </li>
                 <li class="timeline-item card" data-reveal>
@@ -176,6 +182,18 @@
                     <ul>
                         <li>Designed and assembled an ESP32-S3 avionics board in Altium for in-flight sensing and telemetry.</li>
                         <li>Designed a LiFePO4 / solar / USB PD payload power system for 24+ hours of data collection after landing.</li>
+                    </ul>
+                </li>
+                <li class="timeline-item card" data-reveal>
+                    <div class="timeline-head">
+                        <h3>Software Development Intern</h3>
+                        <span class="timeline-date">Jun 2023 &ndash; Jul 2023</span>
+                    </div>
+                    <p class="timeline-org">Parsec Automation Corp. &middot; Yorba Linda, CA</p>
+                    <ul>
+                        <li>Prototyped client and R&amp;D solutions for the TrakSYS web app using C#, JavaScript, and Azure APIs.</li>
+                        <li>Integrated Azure Optical Character Recognition (OCR) to reduce client data entry errors.</li>
+                        <li>Assessed Azure AI (GPT-3.5) with a SQL database to improve database search and access.</li>
                     </ul>
                 </li>
             </ol>
