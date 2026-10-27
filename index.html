@@ -1,732 +1,524 @@
 <!DOCTYPE html>
-
 <html lang="en">
-   <head>
-      <title> Brent Lee Website </title>
-      <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1" name="viewport">
-      <script crossorigin="anonymous"
-         src="https://use.fontawesome.com/releases/v6.1.0/js/all.js">
-      </script>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-       <link href="css/main.css" rel="stylesheet">
-       <link href="css/index.css" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Brent Lee | Digital Design &amp; Hardware</title>
+    <meta name="description" content="Brent Lee is an EECS student at UC Berkeley focused on digital design and silicon: RTL design, verification, computer architecture, and PCB design.">
+    <meta name="theme-color" content="#05061a">
+    <meta property="og:title" content="Brent Lee | Digital Design &amp; Hardware">
+    <meta property="og:description" content="EECS @ UC Berkeley. RISC-V ASIC design, battery management PCBs, and other hardware projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://overlordpro-sys.github.io/">
+    <meta property="og:image" content="https://overlordpro-sys.github.io/files/web/eecs151_layout.webp">
+    <link rel="icon" href="files/favicon.svg" type="image/svg+xml">
 
-   </head>
-   <body class="bg-dark">
-      <!--Navbar start-->
-      <div class="container-fluid px-0">
-         <nav class="navbar navbar-expand-md px-3 fixed-top">
-            <a class="navbar-brand text-light" href="index.html">Brent Lee</a>
-            <button class="navbar-toggler navbar-dark"
-               data-bs-target="#main-navigation" data-bs-toggle="collapse"
-               type="button">
-               <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse " id="main-navigation">
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item px-3"><a class="nav-link text-light"
-                        href="index.html">About</a></li>
-                  <li class="nav-item px-3"><a class="nav-link text-light"
-                        href="internship.html">Internship</a></li>
-                  <li class="nav-item px-3"><a class="nav-link text-light"
-                        href="resume.html">Resume</a></li>
-               </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <script defer src="js/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<canvas id="starfield" aria-hidden="true"></canvas>
+
+<header class="site-header">
+    <nav class="nav container" aria-label="Main">
+        <a class="brand" href="#top" aria-label="Brent Lee, back to top">
+            <span class="brand-mark" aria-hidden="true">BL</span>
+            Brent Lee
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+            <iconify-icon icon="mdi:menu" aria-hidden="true"></iconify-icon>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="btn btn-sm" href="resume.html">
+                <iconify-icon icon="mdi:file-document-outline" aria-hidden="true"></iconify-icon>
+                Resume
+            </a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="hero-portrait">
+                <img src="files/web/portrait.webp" alt="Portrait of Brent Lee" width="720" height="720" fetchpriority="high">
             </div>
-         </nav>
-      </div>
-      <!--Navbar end-->
-
-      <header class="masthead">
-         <div class="container h-100">
-            <div class="row h-100 align-content-center">
-               <div class="col text-center">
-                  <img alt="Image of Brent"
-                     class="img-fluid rounded-circle border border-light border-5"
-                     src="files/self-portrait.jpg" style="height: 30vh">
-                  <h1 class="text-light">
-                     Hi, I'm
-                     <span class="text-primary">Brent</span>
-                  </h1>
-               </div>
+            <span class="eyebrow">EECS @ UC Berkeley &middot; Class of 2028</span>
+            <h1>Hi, I'm <span class="gradient-text">Brent</span>.</h1>
+            <p class="hero-lead">
+                I work on digital design and silicon: RTL design, verification, and computer architecture,
+                plus the boards that carry it.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">
+                    View my work
+                    <iconify-icon icon="mdi:arrow-right" aria-hidden="true"></iconify-icon>
+                </a>
+                <a class="btn" href="resume.html">
+                    <iconify-icon icon="mdi:file-document-outline" aria-hidden="true"></iconify-icon>
+                    Resume
+                </a>
             </div>
-            <a class="row down-arrow align-items-center" href="#about"></a>
-         </div>
-      </header>
-
-      <section class="d-flex align-items-center" id="about">
-         <div class="container">
-            <div class="row gx-5 justify-content-center align-items-center">
-               <div class="col-8 col-sm-6 col-lg-3">
-                  <img alt="Brent Front View Image"
-                     class="img-fluid rounded-circle border border-light border-5 mb-5"
-                     src="files/about-pic.jpg">
-                  <div class="social d-flex justify-content-center"
-                     id="social1">
-                     <a class="mx-2"
-                        href="https://www.youtube.com/channel/UCWsG0tszNpZowuGIkNcHuQw"
-                        rel="noopener noreferrer"
-                        target="_blank"><i
-                           class="fab fa-3x fa-youtube"></i></a>
-                     <a class="mx-2"
-                        href="https://www.linkedin.com/in/brent-lee-165806247/"
-                        rel="noopener noreferrer"
-                        target="_blank"><i
-                           class="fab fa-3x fa-linkedin"></i></a>
-                     <a class="mx-2" href="https://github.com/overlordpro-sys"
-                        rel="noopener noreferrer"
-                        target="_blank">
-                        <i class="fab fa-3x fa-github"></i></a>
-                  </div>
-               </div>
-               <div class="col-sm-12 col-lg-7 text-light">
-                  <h2>Brent Lee</h2>
-                  <h5>Electrical Engineering and Computer Science @ University of California, Berkeley</h5>
-                  <span></span>
-                  <p class="lead">I'm an EECS student at UC Berkeley, class of 2028, focused on digital design and silicon. I'm most interested in SoCs and front-end work: RTL design, verification, and computer architecture.
-                  </p>
-                  <p class="lead">Most recently I designed a pipelined RISC-V processor in Berkeley's ASIC lab and took it from SystemVerilog to a routed Skywater 130nm layout. It was an Apple Design Project finalist. I also lead a team designing the battery management control board for CalSol, Berkeley's solar car team.
-                  </p>
-                  <p class="lead">I interned with Boeing's Electromagnetic Effects team, where I ran transient pin injection testing for component qualification and built a Python tool that uses LLMs to generate certification reports from ground test procedures. Before that, at The Aerospace Corporation, I assembled and tested an RF front end for a satellite receiver and built a software-defined radio protocol stack with packet framing and error correction.
-                  </p>
-                  <div class="social d-flex justify-content-center mt-4"
-                     id="social2">
-                     <a class="mx-2"
-                        href="https://www.youtube.com/channel/UCWsG0tszNpZowuGIkNcHuQw"
-                        rel="noopener noreferrer"
-                        target="_blank"><i
-                           class="fab fa-3x fa-youtube"></i></a>
-                     <a class="mx-2"
-                        href="https://www.linkedin.com/in/brent-lee-165806247/"
-                        rel="noopener noreferrer"
-                        target="_blank"><i
-                           class="fab fa-3x fa-linkedin"></i></a>
-                     <a class="mx-2" href="https://github.com/overlordpro-sys"
-                        rel="noopener noreferrer"
-                        target="_blank"><i class="fab fa-3x fa-github"></i></a>
-                  </div>
-               </div>
+            <div class="socials">
+                <a class="icon-link" href="https://www.linkedin.com/in/brent-lee-165806247/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <iconify-icon icon="mdi:linkedin" aria-hidden="true"></iconify-icon>
+                </a>
+                <a class="icon-link" href="https://github.com/overlordpro-sys" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <iconify-icon icon="mdi:github" aria-hidden="true"></iconify-icon>
+                </a>
+                <a class="icon-link" href="https://www.youtube.com/channel/UCWsG0tszNpZowuGIkNcHuQw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <iconify-icon icon="mdi:youtube" aria-hidden="true"></iconify-icon>
+                </a>
             </div>
-            <div class="container text-center mt-5">
-               <div class="row text-light">
-                  <div class="col-10 mx-auto">
-                     <h2 class="mb-3">See my</h2>
-                     <a class="btn btn-light abt-btn" href="#skills">
-                        Skills</a>
-                     <a class="btn btn-light abt-btn" href="#projects">
-                        Portfolio</a>
-                     <br>
-                     <a class="btn btn-light abt-btn" href="internship.html">
-                        Internship</a>
-                     <a class="btn btn-light abt-btn" href="resume.html">
-                        Resume</a>
-                  </div>
-               </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+            <iconify-icon icon="mdi:arrow-down" aria-hidden="true"></iconify-icon>
+        </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">01 / About</span>
+                <h2>About me</h2>
             </div>
-         </div>
-      </section>
-
-      <section class="container-fluid d-flex align-items-center" id="skills">
-         <div class="container text-center text-light">
-            <h1 style="padding-bottom: 60px">My Skills</h1>
-            <ul>
-               <li>
-                  <iconify-icon icon="logos:python"></iconify-icon>
-                  <p>Python</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:java"></iconify-icon>
-                  <p>Java</p>
-               </li>
-               <li>
-                  <iconify-icon
-                          icon="vscode-icons:file-type-c"></iconify-icon>
-                  <p>C</p>
-               </li>
-               <li>
-                  <iconify-icon
-                     icon="vscode-icons:file-type-cpp3"></iconify-icon>
-                  <p>C++</p>
-               </li>
-               <li>
-                  <iconify-icon icon="devicon:csharp"></iconify-icon>
-                  <p>C++</p>
-               </li>
-               <li>
-                  <iconify-icon icon="flat-color-icons:circuit"></iconify-icon>
-                  <p>PCB Design</p>
-               </li>
-               <li>
-                  <iconify-icon icon="simple-icons:altiumdesigner"></iconify-icon>
-                  <p>Altium Designer</p>
-               </li>
-               <li>
-                  <iconify-icon icon="simple-icons:kicad"></iconify-icon>
-                  <p>KiCad</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:ubuntu"></iconify-icon>
-                  <p>Ubuntu</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:jupyter"></iconify-icon>
-                  <p>Jupyter Notebook</p>
-               </li>
-               <li>
-                  <iconify-icon
-                          icon="carbon:machine-learning-model"></iconify-icon>
-                  <p>Machine Learning</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:opencv"></iconify-icon>
-                  <p>Computer Vision</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:pytorch-icon"></iconify-icon>
-                  <p>PyTorch</p>
-               </li>
-               <li>
-                  <iconify-icon icon="carbon:chart-3d"></iconify-icon>
-                  <p>3D CAD</p>
-               </li>
-               <li>
-                  <iconify-icon icon="skill-icons:arduino"></iconify-icon>
-                  <p>Arduino</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:javascript"></iconify-icon>
-                  <p>Javascript</p>
-               </li>
-               <li>
-                  <iconify-icon icon="mdi:git"
-                                style="color:#f1502f"></iconify-icon>
-                  <p>Git</p>
-               </li>
-               <li>
-                  <iconify-icon icon="ic:twotone-security"></iconify-icon>
-                  <p>Cyber Security</p>
-               </li>
-               <li>
-                  <iconify-icon
-                     icon="vscode-icons:file-type-html"></iconify-icon>
-                  <p>HTML</p>
-               </li>
-               <li>
-                  <iconify-icon
-                     icon="vscode-icons:file-type-css"></iconify-icon>
-                  <p>CSS</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:bootstrap"></iconify-icon>
-                  <p>Bootstrap</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:vue"></iconify-icon>
-                  <p>Vue.js</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:pinia"></iconify-icon>
-                  <p>Vue.js</p>
-               </li>
-               <li>
-                  <iconify-icon icon="logos:microsoft-azure"></iconify-icon>
-                  <p>Azure Web Services</p>
-               </li>
-            </ul>
-         </div>
-      </section>
-
-      <section id="projects">
-         <div class="container-xxl text-light">
-            <h1 class="text-center">My Portfolio</h1>
-             <div class="row project align-items-center">
-                 <div class="col-lg-6 col-sm-12">
-                     <div class="carousel slide" data-bs-interval="false"
-                          id="riscv_carousel">
-                         <div class="carousel-indicators">
-                             <button aria-current="true" aria-label="Slide 1"
-                                     class="active" data-bs-slide-to="0"
-                                     data-bs-target="#riscv_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 2"
-                                     data-bs-slide-to="1"
-                                     data-bs-target="#riscv_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 3"
-                                     data-bs-slide-to="2"
-                                     data-bs-target="#riscv_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 4"
-                                     data-bs-slide-to="3"
-                                     data-bs-target="#riscv_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 5"
-                                     data-bs-slide-to="4"
-                                     data-bs-target="#riscv_carousel"
-                                     type="button"></button>
-                         </div>
-                         <div class="carousel-inner">
-                             <!-- Item 1 -->
-                             <div class="carousel-item active">
-                                 <a href="files/projects/eecs151_layout.png">
-                                     <img alt="Post place-and-route layout in Cadence Innovus"
-                                          class="d-block w-100"
-                                          src="files/projects/eecs151_layout.png">
-                                 </a>
-                             </div>
-                             <!-- Item 2 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/eecs151_datapath.png">
-                                     <img alt="Processor datapath diagram"
-                                          class="d-block w-100"
-                                          src="files/projects/eecs151_datapath.png">
-                                 </a>
-                             </div>
-                             <!-- Item 3 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/eecs151_cache_fsm.png">
-                                     <img alt="Direct-mapped cache FSM and SRAM bank layout"
-                                          class="d-block w-100"
-                                          src="files/projects/eecs151_cache_fsm.png">
-                                 </a>
-                             </div>
-                             <!-- Item 4 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/eecs151_2way_cache.png">
-                                     <img alt="2-way set-associative write-back cache diagram"
-                                          class="d-block w-100"
-                                          src="files/projects/eecs151_2way_cache.png">
-                                 </a>
-                             </div>
-                             <!-- Item 5 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/eecs151_fom.png">
-                                     <img alt="Figure of merit across design iterations"
-                                          class="d-block w-100"
-                                          src="files/projects/eecs151_fom.png">
-                                 </a>
-                             </div>
-                         </div>
-                         <button class="carousel-control-prev"
-                                 data-bs-slide="prev"
-                                 data-bs-target="#riscv_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-prev-icon"></span>
-                             <span class="visually-hidden">Previous</span>
-                         </button>
-                         <button class="carousel-control-next"
-                                 data-bs-slide="next"
-                                 data-bs-target="#riscv_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-next-icon"></span>
-                             <span class="visually-hidden">Next</span>
-                         </button>
-                     </div>
-                 </div>
-                 <div class="col-lg-6 col-sm-12">
-                     <h2>RISC-V Processor ASIC</h2>
-                     <h5 class="text-secondary">EECS 151 ASIC Lab &middot; Apple Design Project Finalist</h5>
-                     <p class="lead">
-                         With a partner, I built a 3-stage pipelined RV32I processor in SystemVerilog: fetch, a combined decode/execute stage, and a combined memory/writeback stage, with register-file bypassing and writeback-to-execute forwarding. The write-back, write-allocate caches are built from Skywater 130nm SRAM macros. We took the design through the full RTL-to-GDS flow (VCS, Design Compiler, and Innovus via Hammer), closed setup and hold timing after place-and-route, and ran the full test suite against the routed netlist.
-                     </p>
-                     <p class="lead">
-                         I owned the optimization against the competition's energy &times; area figure of merit, trying 3-, 4-, and 5-stage pipelines, a branch predictor, set-associative and direct-mapped caches at several sizes, and different SRAM placements. The 5-stage pipeline gained about 10 MHz but lost more than that in extra cycles. The 64-entry branch predictor nearly doubled core power for only a small drop in cycle count, so I cut it. Small 1 kB direct-mapped caches beat both the larger caches and the set-associative ones. Clock-gating the datapath and caches and relaxing the clock to about 24 MHz brought the core to 3.8 mW in 0.86 mm&sup2;, which took the figure of merit from about 10 to 42.2 and made the design an Apple Design Project finalist.
-                     </p>
-                     <!-- Uncomment if the repo is public
-                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary"
-                           href="https://github.com/overlordpro-sys/eecs151-asic-project"
-                           rel="noopener noreferrer"
-                           target="_blank">
-                           <iconify-icon icon="mdi:github" inline></iconify-icon>
-                           Github
-                        </a>
-                     </div>
-                     -->
-                 </div>
-             </div>
-             <div class="row project align-items-center">
-                 <div class="col-lg-6 col-sm-12">
-                     <div class="carousel slide" data-bs-interval="false"
-                          id="calsol_carousel">
-                         <div class="carousel-indicators">
-                             <button aria-current="true" aria-label="Slide 1"
-                                     class="active"
-                                     data-bs-slide-to="0"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 2"
-                                     data-bs-slide-to="1"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 3"
-                                     data-bs-slide-to="2"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 4"
-                                     data-bs-slide-to="3"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 5"
-                                     data-bs-slide-to="4"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 6"
-                                     data-bs-slide-to="5"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 7"
-                                     data-bs-slide-to="6"
-                                     data-bs-target="#calsol_carousel"
-                                     type="button"></button>
-                         </div>
-                         <div class="carousel-inner">
-                             <!-- Item 1 -->
-                             <div class="carousel-item active">
-                                 <a href="files/projects/calsol_3d.png">
-                                     <img alt="3D render of the Gen 11 BMS controller board layout"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_3d.png">
-                                 </a>
-                             </div>
-                             <!-- Item 2 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/calsol_layout.png">
-                                     <img alt="First-pass PCB layout showing the isolated isoSPI island around the transformer"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_layout.png">
-                                 </a>
-                             </div>
-                             <!-- Item 3 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/calsol_schematic.png">
-                                     <img alt="Top-level KiCad schematic of the current BMS revision"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_schematic.png">
-                                 </a>
-                             </div>
-                             <!-- Item 4 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/calsol_bms_block.png">
-                                     <img alt="Gen 11 BMS controller board block diagram"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_bms_block.png">
-                                 </a>
-                             </div>
-                             <!-- Item 5 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/calsol_contactor.png">
-                                     <img alt="UCC27624 gate driver and low-side contactor FETs"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_contactor.png">
-                                 </a>
-                             </div>
-                             <!-- Item 6 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/calsol_rs485.png">
-                                     <img alt="RS485 transceiver for the pack current sensor"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_rs485.png">
-                                 </a>
-                             </div>
-                             <!-- Item 7 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/calsol_isospi.png">
-                                     <img alt="Dual LTC6820 isoSPI master schematic"
-                                          class="d-block w-100"
-                                          src="files/projects/calsol_isospi.png">
-                                 </a>
-                             </div>
-                         </div>
-                         <button class="carousel-control-prev"
-                                 data-bs-slide="prev"
-                                 data-bs-target="#calsol_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-prev-icon"></span>
-                             <span class="visually-hidden">Previous</span>
-                         </button>
-                         <button class="carousel-control-next"
-                                 data-bs-slide="next"
-                                 data-bs-target="#calsol_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-next-icon"></span>
-                             <span class="visually-hidden">Next</span>
-                         </button>
-                     </div>
-                 </div>
-                 <div class="col-lg-6 col-sm-12">
-                     <h2>Solar Car Battery Management System</h2>
-                     <h5 class="text-secondary">Berkeley Solar Car (CalSol) &middot; Electrical Project Lead</h5>
-                     <p class="lead">
-                         I lead the battery management system for CalSol's Gen 11 solar car and designed its controller board, a 4-layer PCB in KiCad that carries the team's ESP32-S3 dev module. Four LTC6820 transceivers and two HX1188 pulse transformers give it four isoSPI ports to the battery module boards, with the cable side of each transformer isolated by a moat cut through every copper layer. The isoSPI pairs are the board's only controlled-impedance nets, and I coordinated their 120 &Omega; differential impedance target with our sponsor fab, Bay Area Circuits. The board also switches the pack contactors, runs eight PWM cooling fans from two ADT7470 controllers on a fused supply, reads the low-voltage power board's source status, and drives an OLED display, four amber error LEDs, and a buzzer.
-                     </p>
-                     <p class="lead">
-                         The first layout is done, and I'm now leading the schematic revision before we re-lay out and order. It adds a TPS7E8101 LDO so the board runs on either 12 V or 24 V CAN, drives the contactor FETs from a UCC27624 gate driver instead of a 3.3 V GPIO, and adds an RS485 transceiver so the pack current sensor reports straight to the BMS. Our previous car's BMS faulted whenever CAN went down because it lost its current reading. Bring-up and firmware integration come next.
-                     </p>
-                 </div>
-             </div>
-             <div class="row project align-items-center">
-                 <div class="col-lg-6 col-sm-12">
-                     <div class="carousel slide" data-bs-interval="false"
-                          id="star_carousel">
-                         <div class="carousel-indicators">
-                             <button aria-current="true" aria-label="Slide 1"
-                                     class="active" data-bs-slide-to="0"
-                                     data-bs-target="#star_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 2" data-bs-slide-to="1"
-                                     data-bs-target="#star_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 3" data-bs-slide-to="2"
-                                     data-bs-target="#star_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 4" data-bs-slide-to="3"
-                                     data-bs-target="#star_carousel"
-                                     type="button"></button>
-                         </div>
-                         <div class="carousel-inner">
-                             <!-- Item 1 -->
-                             <div class="carousel-item active">
-                                 <a href="files/projects/star0.png">
-                                     <img alt="PCB"
-                                          class="d-block w-100"
-                                          src="files/projects/star0.png">
-                                 </a>
-
-                             </div>
-                             <!-- Item 2 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/star1.png">
-                                     <img alt="PCB in Av Bay"
-                                          class="d-block w-100"
-                                          src="files/projects/star1.png">
-                                 </a>
-                             </div>
-                             <!-- Item 3 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/star2.png">
-                                     <img alt="Schematic"
-                                          class="d-block w-100"
-                                          src="files/projects/star2.png">
-                                 </a>
-                             </div>
-                             <!-- Item 4 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/star3.png">
-                                     <img alt="Rocket Picture"
-                                          class="d-block w-100"
-                                          src="files/projects/star3.png">
-                                 </a>
-                             </div>
-                         </div>
-                         <button class="carousel-control-prev"
-                                 data-bs-slide="prev"
-                                 data-bs-target="#star_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-prev-icon"></span>
-                             <span class="visually-hidden">Previous</span>
-                         </button>
-                         <button class="carousel-control-next"
-                                 data-bs-slide="next"
-                                 data-bs-target="#star_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-next-icon"></span>
-                             <span class="visually-hidden">Next</span>
-                         </button>
-                     </div>
-                 </div>
-                 <div class="col-lg-6 col-sm-12">
-                     <h2>Starflower Avionics Board</h2>
-                     <p class="lead">
-                         Avionics board built for the STAR onboarding project for our rocket Starflower (slide 4). The board uses an ESP32-S3-WROOM-1-N8 and features a working barometer and IMU. Code for interfacing with flash memory is W.I.P. Telemetry recording on ESP32 flash begins when IMU detects sufficient acceleration (takeoff!).
-                     </p>
-                 </div>
-             </div>
-             <div class="row project align-items-center">
-                 <div class="col-lg-6 col-sm-12">
-                     <div class="carousel slide" data-bs-interval="false"
-                          id="stm_carousel">
-                         <div class="carousel-indicators">
-                             <button aria-current="true" aria-label="Slide 1"
-                                     class="active" data-bs-slide-to="0"
-                                     data-bs-target="#stm_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 2" data-bs-slide-to="1"
-                                     data-bs-target="#stm_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 3" data-bs-slide-to="2"
-                                     data-bs-target="#stm_carousel"
-                                     type="button"></button>
-                             <button aria-label="Slide 4" data-bs-slide-to="3"
-                                     data-bs-target="#stm_carousel"
-                                     type="button"></button>
-                         </div>
-                         <div class="carousel-inner">
-                             <!-- Item 1 -->
-                             <div class="carousel-item active">
-                                 <a href="files/projects/stm0.png">
-                                     <img alt="STM Macroboard Front"
-                                          class="d-block w-100"
-                                          src="files/projects/stm0.png">
-                                 </a>
-
-                             </div>
-                             <!-- Item 2 -->
-                             <div class="carousel-item">
-                                 <a href="files/projects/stm1.png">
-                                    <img alt="STM Macroboard Back"
-                                         class="d-block w-100"
-                                         src="files/projects/stm1.png">
-                                 </a>
-                             </div>
-                             <!-- Item 3 -->
-                             <div class="carousel-item">
-                                     <a href="files/projects/stm2.png">
-                                         <img alt="PCB Render"
-                                              class="d-block w-100"
-                                              src="files/projects/stm2.png">
-                                     </a>
-                             </div>
-                             <!-- Item 4 -->
-                             <div class="carousel-item">
-                                     <a href="files/projects/stm3.png">
-                                         <img alt="Schematic"
-                                              class="d-block w-100"
-                                              src="files/projects/stm3.png">
-                                     </a>
-                             </div>
-                         </div>
-                         <button class="carousel-control-prev"
-                                 data-bs-slide="prev"
-                                 data-bs-target="#stm_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-prev-icon"></span>
-                             <span class="visually-hidden">Previous</span>
-                         </button>
-                         <button class="carousel-control-next"
-                                 data-bs-slide="next"
-                                 data-bs-target="#stm_carousel"
-                                 type="button">
-                           <span aria-hidden="true"
-                                 class="carousel-control-next-icon"></span>
-                             <span class="visually-hidden">Next</span>
-                         </button>
-                     </div>
-                 </div>
-                 <div class="col-lg-6 col-sm-12">
-                     <h2> STM32 Mechanical Keyboard</h2>
-                     <p class="lead">
-                         I am currently working on building an STM32-based mechanical keyboard. The final version will have an I2C mini-OLED screen, pair of digital encoder knobs, and fully addressable RGB LED lighting. I eventually plan to have an aluminum case machined to house the PCB.
-                         Instead of KiCad, I'm using Altium Designer for schematic and layout. I've had the proof-of-concept macro-pad manufactured and have finished hand-soldering (pictured left), and have just started bringup.
-                     </p>
-                 </div>
-             </div>
-            <div class="row project align-items-center">
-               <div class="col-lg-6 col-sm-12">
-                  <img alt="Arduino Keyboard Image" class="img-fluid"
-                     src="files/projects/arduino-keyboard.png">
-               </div>
-               <div class="col-lg-6 col-sm-12">
-                  <h2> Arduino Mechanical Keyboard</h2>
-                  <p class="lead">
-                     For this project, I designed and built my own Arduino
-                     mechanical keyboard. Using KiCAD, I created
-                     the schematic
-                     and designed the PCB. After sending it in to be
-                     manufactured, I used a combination of LibreCAD and
-                     Fusion 360 to design a keyboard case.
-                  </p>
-                  <div class="d-flex">
-                     <a class="btn btn-lg btn-primary"
-                        href="https://www.youtube.com/watch?v=BKlyYG0T2mQ&t=1s"
-                        rel="noopener noreferrer"
-                        target="_blank">
-                        <iconify-icon icon="mdi:youtube" inline></iconify-icon>
-                        Video
-                     </a>
-                     <a class="btn btn-lg btn-primary "
-                        href="https://github.com/overlordpro-sys/keycool84keyboard"
-                        rel="noopener noreferrer"
-                        target="_blank">
-                        <iconify-icon icon="mdi:github" inline></iconify-icon>
-                        Github
-                     </a>
-                  </div>
-               </div>
+            <div class="about-grid">
+                <div class="about-text" data-reveal>
+                    <p>I'm an EECS student at UC Berkeley, class of 2028, focused on digital design and silicon. I'm most interested in SoCs and front-end work: RTL design, verification, and computer architecture.</p>
+                    <p>Most recently I designed a pipelined RISC-V processor in Berkeley's ASIC lab and took it from SystemVerilog to a routed Skywater 130nm layout. It was an Apple Design Project finalist. I also lead a team designing the battery management control board for CalSol, Berkeley's solar car team.</p>
+                    <p>I interned with Boeing's Electromagnetic Effects team, where I ran transient pin injection testing for component qualification and built a Python tool that uses LLMs to generate certification reports from ground test procedures. Before that, at The Aerospace Corporation, I assembled and tested an RF front end for a satellite receiver and built a software-defined radio protocol stack with packet framing and error correction.</p>
+                </div>
+                <dl class="facts card" data-reveal>
+                    <div>
+                        <dt>Studying</dt>
+                        <dd>B.S. Electrical Engineering &amp; Computer Sciences, UC Berkeley</dd>
+                    </div>
+                    <div>
+                        <dt>Graduating</dt>
+                        <dd>May 2028</dd>
+                    </div>
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>RTL design, verification, computer architecture</dd>
+                    </div>
+                    <div>
+                        <dt>Currently</dt>
+                        <dd>EME Qualification Intern at Boeing<br>Electrical Project Lead at CalSol</dd>
+                    </div>
+                </dl>
             </div>
-            <div class="row project align-items-center">
-               <div class="col-lg-6 col-sm-12">
-                  <video autoplay loop muted title="AimLab Auto Aimer">
-                     <source src="files/projects/aimer.mp4" type="video/mp4">
-                  </video>
-               </div>
-               <div class="col-lg-6 col-sm-12">
-                  <h2>AimLab Auto-Aim</h2>
-                  <p class="lead">
-                     Using computer vision to technically create an "aim-bot"
-                     for an aim training game. I used OpenCV and
-                     contours to detect targets. After compensating for a
-                     first-person-view, the mouse moves to and
-                     clicks on that target.
-                  </p>
-                  <div class="d-flex">
-                     <a class="btn btn-lg btn-primary "
-                        href="https://github.com/overlordpro-sys/cv2-aim-script"
-                        rel="noopener noreferrer"
-                        target="_blank">
-                        <iconify-icon icon="mdi:github" inline></iconify-icon>
-                        Github
-                     </a>
-                  </div>
-               </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">02 / Experience</span>
+                <h2>Where I've worked</h2>
             </div>
-            <div class="row project align-items-center">
-               <div class="col-lg-6 col-sm-12">
-                  <img alt="Bounding Boxes Image" class="img-fluid"
-                     src="files/projects/auto-annotate.png">
-               </div>
-               <div class="col-lg-6 col-sm-12">
-                  <h2>TensorFlow Object Detection Assisted Annotation</h2>
-                  <p class="lead">
-                     In the earlier stages of my Auto-Aim project, I planned to
-                     use object detection to locate targets.
-                     Although that proved inefficient, in the process, I wrote a
-                     program to help me annotate the training
-                     data.
-                     The program uses a partially trained model to write
-                     annotation boxes to an xml file.
-                  </p>
-                  <div class="d-flex">
-                     <a class="btn btn-lg btn-primary "
-                        href="https://github.com/overlordpro-sys/tfod-auto-annotate"
-                        rel="noopener noreferrer"
-                        target="_blank">
-                        <iconify-icon icon="mdi:github" inline></iconify-icon>
-                        Github
-                     </a>
-                  </div>
-               </div>
+            <ol class="timeline">
+                <li class="timeline-item card" data-reveal>
+                    <div class="timeline-head">
+                        <h3>Electromagnetic Effects Qualification Intern</h3>
+                        <span class="timeline-date">May 2026 &ndash; Present</span>
+                    </div>
+                    <p class="timeline-org">The Boeing Company &middot; Commercial Airplanes &middot; Everett, WA</p>
+                    <ul>
+                        <li>Built a Python app that uses LLMs to generate certification reports from ground test procedures, cutting report turnaround from months to weeks.</li>
+                        <li>Ran transient pin injection testing for component-level qualification and supported aircraft ground tests.</li>
+                        <li>Evaluated supplier qualification packages against hardware and software compliance requirements.</li>
+                    </ul>
+                </li>
+                <li class="timeline-item card" data-reveal>
+                    <div class="timeline-head">
+                        <h3>Electrical Team Project Lead</h3>
+                        <span class="timeline-date">Aug 2025 &ndash; Present</span>
+                    </div>
+                    <p class="timeline-org">Berkeley Solar Car (CalSol)</p>
+                    <ul>
+                        <li>Leading a 3-person team designing the 4-layer battery management control PCB for the Gen XI car.</li>
+                        <li>Designed the isoSPI interfaces to the battery module boards, plus contactor, thermal management, and status circuitry.</li>
+                    </ul>
+                </li>
+                <li class="timeline-item card" data-reveal>
+                    <div class="timeline-head">
+                        <h3>Wireless &amp; Navigation / Digital Communications Intern</h3>
+                        <span class="timeline-date">May 2025 &ndash; Aug 2025</span>
+                    </div>
+                    <p class="timeline-org">The Aerospace Corporation &middot; El Segundo, CA</p>
+                    <ul>
+                        <li>Assembled and tested an RF front end for a satellite receiver, improving interference rejection by 40&nbsp;dB+.</li>
+                        <li>Built an SDR protocol stack with 2FSK modulation, preamble sync, forward error correction, and CRC validation.</li>
+                        <li>Ported the transmitter signal processing from Python to C++ with Intel Performance Primitives to raise throughput.</li>
+                    </ul>
+                </li>
+                <li class="timeline-item card" data-reveal>
+                    <div class="timeline-head">
+                        <h3>Avionics Deputy</h3>
+                        <span class="timeline-date">Aug 2024 &ndash; May 2026</span>
+                    </div>
+                    <p class="timeline-org">Space Technologies and Rocketry (STAR) at Berkeley</p>
+                    <ul>
+                        <li>Designed and assembled an ESP32-S3 avionics board in Altium for in-flight sensing and telemetry.</li>
+                        <li>Designed a LiFePO4 / solar / USB PD payload power system for 24+ hours of data collection after landing.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">03 / Projects</span>
+                <h2>Portfolio</h2>
+                <p>Silicon, circuit boards, and a few software experiments. Swipe or use the arrows to browse each gallery, and tap an image to enlarge it.</p>
             </div>
-         </div>
-      </section>
 
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-      <script
-         src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-      <script defer src="js/index.js"></script>
+            <div class="projects">
+                <!-- RISC-V ASIC -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track" tabindex="0" aria-label="RISC-V processor ASIC images">
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/eecs151_layout.webp" alt="Post place-and-route layout in Cadence Innovus" width="1246" height="810" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/eecs151_pipeline.webp" alt="3-stage pipelined RV32I core block diagram" width="1600" height="1200" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/eecs151_datapath.webp" alt="Processor datapath diagram" width="1224" height="532" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/eecs151_cache_fsm.webp" alt="Direct-mapped cache FSM and SRAM bank layout" width="1800" height="1012" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/eecs151_2way_cache.webp" alt="2-way set-associative write-back cache diagram" width="1800" height="955" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/eecs151_fom.webp" alt="Figure of merit across design iterations" width="1600" height="1200" loading="lazy" decoding="async"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <span class="badge"><iconify-icon icon="mdi:trophy-outline" aria-hidden="true"></iconify-icon> Apple Design Project Finalist</span>
+                        <h3>RISC-V Processor ASIC</h3>
+                        <p class="project-meta">EECS 151 ASIC Lab &middot; Spring 2026</p>
+                        <p>With a partner, I built a 3-stage pipelined RV32I processor in SystemVerilog: fetch, a combined decode/execute stage, and a combined memory/writeback stage, with register-file bypassing and writeback-to-execute forwarding. The write-back, write-allocate caches are built from Skywater 130nm SRAM macros. We took the design through the full RTL-to-GDS flow (VCS, Design Compiler, and Innovus via Hammer), closed setup and hold timing after place-and-route, and ran the full test suite against the routed netlist.</p>
+                        <p>I owned the optimization against the competition's energy &times; area figure of merit, trying 3-, 4-, and 5-stage pipelines, a branch predictor, set-associative and direct-mapped caches at several sizes, and different SRAM placements. The 5-stage pipeline gained about 10 MHz but lost more than that in extra cycles. The 64-entry branch predictor nearly doubled core power for only a small drop in cycle count, so I cut it. Small 1 kB direct-mapped caches beat both the larger caches and the set-associative ones. Clock-gating the datapath and caches and relaxing the clock to about 24 MHz brought the core to 3.8 mW in 0.86 mm&sup2;, which took the figure of merit from about 10 to 42.2 and made the design an Apple Design Project finalist.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>SystemVerilog</li>
+                            <li>RV32I</li>
+                            <li>Caches</li>
+                            <li>Synopsys VCS</li>
+                            <li>Design Compiler</li>
+                            <li>Cadence Innovus</li>
+                            <li>Hammer</li>
+                            <li>Sky130</li>
+                        </ul>
+                        <!-- Uncomment if the repo is public
+                        <div class="project-links">
+                            <a class="btn btn-sm" href="https://github.com/overlordpro-sys/eecs151-asic-project" target="_blank" rel="noopener noreferrer">
+                                <iconify-icon icon="mdi:github" aria-hidden="true"></iconify-icon> GitHub
+                            </a>
+                        </div>
+                        -->
+                    </div>
+                </article>
 
-   </body>
+                <!-- CalSol BMS -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track" tabindex="0" aria-label="Solar car BMS images">
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_3d.webp" alt="3D render of the Gen 11 BMS controller board layout" width="1010" height="720" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_layout.webp" alt="First-pass PCB layout showing the isolated isoSPI island around the transformer" width="922" height="710" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_schematic.webp" alt="Top-level KiCad schematic of the current BMS revision" width="1800" height="1226" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_bms_block.webp" alt="Gen 11 BMS controller board block diagram" width="1600" height="1200" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_contactor.webp" alt="UCC27624 gate driver and low-side contactor FETs" width="1402" height="612" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_rs485.webp" alt="RS485 transceiver for the pack current sensor" width="1332" height="360" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/calsol_isospi.webp" alt="Dual LTC6820 isoSPI master schematic" width="1620" height="1176" loading="lazy" decoding="async"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Solar Car Battery Management System</h3>
+                        <p class="project-meta">Berkeley Solar Car (CalSol) &middot; Electrical Project Lead</p>
+                        <p>I lead the battery management system for CalSol's Gen 11 solar car and designed its controller board, a 4-layer PCB in KiCad that carries the team's ESP32-S3 dev module. Four LTC6820 transceivers and two HX1188 pulse transformers give it four isoSPI ports to the battery module boards, with the cable side of each transformer isolated by a moat cut through every copper layer. The isoSPI pairs are the board's only controlled-impedance nets, and I coordinated their 120&nbsp;&Omega; differential impedance target with our sponsor fab, Bay Area Circuits. The board also switches the pack contactors, runs eight PWM cooling fans from two ADT7470 controllers on a fused supply, reads the low-voltage power board's source status, and drives an OLED display, four amber error LEDs, and a buzzer.</p>
+                        <p>The first layout is done, and I'm now leading the schematic revision before we re-lay out and order. It adds a TPS7E8101 LDO so the board runs on either 12&nbsp;V or 24&nbsp;V CAN, drives the contactor FETs from a UCC27624 gate driver instead of a 3.3&nbsp;V GPIO, and adds an RS485 transceiver so the pack current sensor reports straight to the BMS. Our previous car's BMS faulted whenever CAN went down because it lost its current reading. Bring-up and firmware integration come next.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>KiCad</li>
+                            <li>4-layer PCB</li>
+                            <li>isoSPI</li>
+                            <li>ESP32-S3</li>
+                            <li>Controlled impedance</li>
+                            <li>Power &amp; gate drive</li>
+                        </ul>
+                    </div>
+                </article>
 
-   <!--main page-->
+                <!-- Starflower avionics -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track" tabindex="0" aria-label="Starflower avionics board images">
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/star0.webp" alt="Assembled Starflower avionics PCB" width="1350" height="1800" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/star1.webp" alt="Avionics PCB mounted in the av bay" width="1350" height="1800" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/star2.webp" alt="Avionics board schematic" width="1492" height="1071" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/star3.webp" alt="Starflower on the launch rail" width="1350" height="1800" loading="lazy" decoding="async"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Starflower Avionics Board</h3>
+                        <p class="project-meta">Space Technologies and Rocketry (STAR) at Berkeley</p>
+                        <p>Avionics board built for the STAR onboarding project for our rocket Starflower (last photo). The board uses an ESP32-S3-WROOM-1-N8 and features a working barometer and IMU. Code for interfacing with flash memory is W.I.P. Telemetry recording on ESP32 flash begins when IMU detects sufficient acceleration (takeoff!).</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Altium Designer</li>
+                            <li>ESP32-S3</li>
+                            <li>IMU</li>
+                            <li>Barometer</li>
+                            <li>C / Arduino</li>
+                        </ul>
+                    </div>
+                </article>
 
+                <!-- STM32 keyboard -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track" tabindex="0" aria-label="STM32 keyboard images">
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/stm0.webp" alt="STM32 macropad, front" width="1800" height="1800" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/stm1.webp" alt="STM32 macropad, back" width="1800" height="1800" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/stm2.webp" alt="PCB render" width="1244" height="919" loading="lazy" decoding="async"></button></div>
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/stm3.webp" alt="Macropad schematic" width="1476" height="847" loading="lazy" decoding="async"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>STM32 Mechanical Keyboard</h3>
+                        <p class="project-meta">Personal project &middot; In progress</p>
+                        <p>I am currently working on building an STM32-based mechanical keyboard. The final version will have an I2C mini-OLED screen, pair of digital encoder knobs, and fully addressable RGB LED lighting. I eventually plan to have an aluminum case machined to house the PCB.</p>
+                        <p>Instead of KiCad, I'm using Altium Designer for schematic and layout. I've had the proof-of-concept macro-pad manufactured and have finished hand-soldering (pictured), and have just started bringup.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Altium Designer</li>
+                            <li>STM32</li>
+                            <li>I&sup2;C OLED</li>
+                            <li>Addressable RGB</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Arduino keyboard -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track">
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/arduino-keyboard.webp" alt="Arduino mechanical keyboard" width="1599" height="692" loading="lazy" decoding="async"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Arduino Mechanical Keyboard</h3>
+                        <p class="project-meta">Personal project</p>
+                        <p>For this project, I designed and built my own Arduino mechanical keyboard. Using KiCAD, I created the schematic and designed the PCB. After sending it in to be manufactured, I used a combination of LibreCAD and Fusion 360 to design a keyboard case.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>KiCad</li>
+                            <li>Arduino</li>
+                            <li>Fusion 360</li>
+                            <li>LibreCAD</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-sm" href="https://www.youtube.com/watch?v=BKlyYG0T2mQ&amp;t=1s" target="_blank" rel="noopener noreferrer">
+                                <iconify-icon icon="mdi:youtube" aria-hidden="true"></iconify-icon> Video
+                            </a>
+                            <a class="btn btn-sm" href="https://github.com/overlordpro-sys/keycool84keyboard" target="_blank" rel="noopener noreferrer">
+                                <iconify-icon icon="mdi:github" aria-hidden="true"></iconify-icon> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AimLab auto-aim -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track">
+                                <div class="gallery-slide" data-caption="Auto-aim script running in AimLab">
+                                    <video data-autoplay muted loop playsinline preload="none" poster="files/web/aimer-poster.webp" title="AimLab auto-aim demo" width="1280" height="720">
+                                        <source src="files/projects/aimer.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>AimLab Auto-Aim</h3>
+                        <p class="project-meta">Computer vision</p>
+                        <p>Using computer vision to technically create an "aim-bot" for an aim training game. I used OpenCV and contours to detect targets. After compensating for a first-person-view, the mouse moves to and clicks on that target.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Python</li>
+                            <li>OpenCV</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-sm" href="https://github.com/overlordpro-sys/cv2-aim-script" target="_blank" rel="noopener noreferrer">
+                                <iconify-icon icon="mdi:github" aria-hidden="true"></iconify-icon> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TFOD annotation -->
+                <article class="project card" data-reveal>
+                    <div class="project-media">
+                        <div class="gallery" data-gallery>
+                            <div class="gallery-track">
+                                <div class="gallery-slide"><button class="gallery-open" type="button"><img src="files/web/auto-annotate.webp" alt="Auto-generated bounding box annotations" width="1659" height="1012" loading="lazy" decoding="async"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>TensorFlow Object Detection Assisted Annotation</h3>
+                        <p class="project-meta">Machine learning tooling</p>
+                        <p>In the earlier stages of my Auto-Aim project, I planned to use object detection to locate targets. Although that proved inefficient, in the process, I wrote a program to help me annotate the training data. The program uses a partially trained model to write annotation boxes to an xml file.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Python</li>
+                            <li>TensorFlow</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-sm" href="https://github.com/overlordpro-sys/tfod-auto-annotate" target="_blank" rel="noopener noreferrer">
+                                <iconify-icon icon="mdi:github" aria-hidden="true"></iconify-icon> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <span class="eyebrow">04 / Skills</span>
+                <h2>Toolbox</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group card" data-reveal>
+                    <h3><iconify-icon icon="mdi:chip" aria-hidden="true"></iconify-icon> Digital Design &amp; Silicon</h3>
+                    <ul class="skill-list">
+                        <li><iconify-icon icon="mdi:chip" aria-hidden="true"></iconify-icon>SystemVerilog</li>
+                        <li><iconify-icon icon="simple-icons:riscv" aria-hidden="true"></iconify-icon>RISC-V</li>
+                        <li><iconify-icon icon="mdi:cpu-64-bit" aria-hidden="true"></iconify-icon>Computer Architecture</li>
+                        <li><iconify-icon icon="mdi:memory" aria-hidden="true"></iconify-icon>Cache Design</li>
+                        <li><iconify-icon icon="mdi:test-tube" aria-hidden="true"></iconify-icon>Synopsys VCS</li>
+                        <li><iconify-icon icon="mdi:layers-triple-outline" aria-hidden="true"></iconify-icon>Design Compiler</li>
+                        <li><iconify-icon icon="mdi:vector-square" aria-hidden="true"></iconify-icon>Cadence Innovus</li>
+                        <li><iconify-icon icon="mdi:hammer-wrench" aria-hidden="true"></iconify-icon>Hammer RTL-to-GDS</li>
+                        <li><iconify-icon icon="mdi:check-decagram-outline" aria-hidden="true"></iconify-icon>Verilator</li>
+                        <li><iconify-icon icon="mdi:waveform" aria-hidden="true"></iconify-icon>Verdi</li>
+                    </ul>
+                </div>
+                <div class="skill-group card" data-reveal>
+                    <h3><iconify-icon icon="mdi:developer-board" aria-hidden="true"></iconify-icon> PCB &amp; Embedded</h3>
+                    <ul class="skill-list">
+                        <li><iconify-icon icon="simple-icons:kicad" aria-hidden="true"></iconify-icon>KiCad</li>
+                        <li><iconify-icon icon="simple-icons:altiumdesigner" aria-hidden="true"></iconify-icon>Altium Designer</li>
+                        <li><iconify-icon icon="mdi:developer-board" aria-hidden="true"></iconify-icon>Multi-layer PCB Layout</li>
+                        <li><iconify-icon icon="simple-icons:espressif" aria-hidden="true"></iconify-icon>ESP32</li>
+                        <li><iconify-icon icon="simple-icons:stmicroelectronics" aria-hidden="true"></iconify-icon>STM32</li>
+                        <li><iconify-icon icon="simple-icons:arduino" aria-hidden="true"></iconify-icon>Arduino</li>
+                        <li><iconify-icon icon="mdi:sine-wave" aria-hidden="true"></iconify-icon>Oscilloscope &amp; Spectrum Analyzer</li>
+                        <li><iconify-icon icon="mdi:radio-tower" aria-hidden="true"></iconify-icon>RF &amp; SDR</li>
+                        <li><iconify-icon icon="mdi:flash-alert-outline" aria-hidden="true"></iconify-icon>EME Qualification Testing</li>
+                    </ul>
+                </div>
+                <div class="skill-group card" data-reveal>
+                    <h3><iconify-icon icon="mdi:code-braces" aria-hidden="true"></iconify-icon> Software</h3>
+                    <ul class="skill-list">
+                        <li><iconify-icon icon="simple-icons:python" aria-hidden="true"></iconify-icon>Python</li>
+                        <li><iconify-icon icon="simple-icons:c" aria-hidden="true"></iconify-icon>C</li>
+                        <li><iconify-icon icon="simple-icons:cplusplus" aria-hidden="true"></iconify-icon>C++</li>
+                        <li><iconify-icon icon="simple-icons:openjdk" aria-hidden="true"></iconify-icon>Java</li>
+                        <li><iconify-icon icon="simple-icons:linux" aria-hidden="true"></iconify-icon>Linux</li>
+                        <li><iconify-icon icon="simple-icons:git" aria-hidden="true"></iconify-icon>Git</li>
+                        <li><iconify-icon icon="simple-icons:jupyter" aria-hidden="true"></iconify-icon>Jupyter</li>
+                        <li><iconify-icon icon="simple-icons:opencv" aria-hidden="true"></iconify-icon>OpenCV</li>
+                        <li><iconify-icon icon="simple-icons:pytorch" aria-hidden="true"></iconify-icon>PyTorch</li>
+                        <li><iconify-icon icon="mdi:creation-outline" aria-hidden="true"></iconify-icon>LLM Automation</li>
+                        <li><iconify-icon icon="mdi:shield-lock-outline" aria-hidden="true"></iconify-icon>Cybersecurity</li>
+                    </ul>
+                </div>
+                <div class="skill-group card" data-reveal>
+                    <h3><iconify-icon icon="mdi:cube-outline" aria-hidden="true"></iconify-icon> Mechanical &amp; Simulation</h3>
+                    <ul class="skill-list">
+                        <li><iconify-icon icon="simple-icons:dassaultsystemes" aria-hidden="true"></iconify-icon>SolidWorks</li>
+                        <li><iconify-icon icon="simple-icons:autodesk" aria-hidden="true"></iconify-icon>Fusion 360</li>
+                        <li><iconify-icon icon="mdi:rocket-launch-outline" aria-hidden="true"></iconify-icon>OpenRocket</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-card card" data-reveal>
+                <span class="eyebrow">05 / Contact</span>
+                <h2>Let's <span class="gradient-text">talk</span>.</h2>
+                <p>I'd love to discuss potential internship opportunities, especially in RTL design, verification, and computer architecture.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary contact-email" href="mailto:brent_lee@berkeley.edu">
+                        <iconify-icon icon="mdi:email-outline" aria-hidden="true"></iconify-icon>
+                        brent_lee@berkeley.edu
+                    </a>
+                    <a class="btn" href="files/Brent_Lee_Resume.pdf" download>
+                        <iconify-icon icon="mdi:download" aria-hidden="true"></iconify-icon>
+                        Download resume
+                    </a>
+                </div>
+                <div class="socials">
+                    <a class="icon-link" href="https://www.linkedin.com/in/brent-lee-165806247/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <iconify-icon icon="mdi:linkedin" aria-hidden="true"></iconify-icon>
+                    </a>
+                    <a class="icon-link" href="https://github.com/overlordpro-sys" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <iconify-icon icon="mdi:github" aria-hidden="true"></iconify-icon>
+                    </a>
+                    <a class="icon-link" href="https://www.youtube.com/channel/UCWsG0tszNpZowuGIkNcHuQw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <iconify-icon icon="mdi:youtube" aria-hidden="true"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">&copy; <span data-year>2026</span> Brent Lee</div>
+</footer>
+
+<dialog class="lightbox" aria-label="Image viewer">
+    <div class="lightbox-bar">
+        <span class="lightbox-count"></span>
+        <button class="lightbox-close" type="button" aria-label="Close">
+            <iconify-icon icon="mdi:close" aria-hidden="true"></iconify-icon>
+        </button>
+    </div>
+    <div class="lightbox-stage"><img alt=""></div>
+    <p class="lightbox-caption"></p>
+    <button class="lightbox-nav prev" type="button" aria-label="Previous image">
+        <iconify-icon icon="mdi:chevron-left" aria-hidden="true"></iconify-icon>
+    </button>
+    <button class="lightbox-nav next" type="button" aria-label="Next image">
+        <iconify-icon icon="mdi:chevron-right" aria-hidden="true"></iconify-icon>
+    </button>
+</dialog>
+</body>
 </html>
