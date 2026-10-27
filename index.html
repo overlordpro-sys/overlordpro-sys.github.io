@@ -352,6 +352,128 @@
              <div class="row project align-items-center">
                  <div class="col-lg-6 col-sm-12">
                      <div class="carousel slide" data-bs-interval="false"
+                          id="calsol_carousel">
+                         <div class="carousel-indicators">
+                             <button aria-current="true" aria-label="Slide 1"
+                                     class="active"
+                                     data-bs-slide-to="0"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 2"
+                                     data-bs-slide-to="1"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 3"
+                                     data-bs-slide-to="2"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 4"
+                                     data-bs-slide-to="3"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 5"
+                                     data-bs-slide-to="4"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 6"
+                                     data-bs-slide-to="5"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                             <button aria-label="Slide 7"
+                                     data-bs-slide-to="6"
+                                     data-bs-target="#calsol_carousel"
+                                     type="button"></button>
+                         </div>
+                         <div class="carousel-inner">
+                             <!-- Item 1 -->
+                             <div class="carousel-item active">
+                                 <a href="files/projects/calsol_3d.png">
+                                     <img alt="3D render of the Gen 11 BMS controller board layout"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_3d.png">
+                                 </a>
+                             </div>
+                             <!-- Item 2 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/calsol_layout.png">
+                                     <img alt="First-pass PCB layout showing the isolated isoSPI island around the transformer"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_layout.png">
+                                 </a>
+                             </div>
+                             <!-- Item 3 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/calsol_schematic.png">
+                                     <img alt="Top-level KiCad schematic of the current BMS revision"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_schematic.png">
+                                 </a>
+                             </div>
+                             <!-- Item 4 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/calsol_bms_block.png">
+                                     <img alt="Gen 11 BMS controller board block diagram"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_bms_block.png">
+                                 </a>
+                             </div>
+                             <!-- Item 5 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/calsol_contactor.png">
+                                     <img alt="UCC27624 gate driver and low-side contactor FETs"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_contactor.png">
+                                 </a>
+                             </div>
+                             <!-- Item 6 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/calsol_rs485.png">
+                                     <img alt="RS485 transceiver for the pack current sensor"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_rs485.png">
+                                 </a>
+                             </div>
+                             <!-- Item 7 -->
+                             <div class="carousel-item">
+                                 <a href="files/projects/calsol_isospi.png">
+                                     <img alt="Dual LTC6820 isoSPI master schematic"
+                                          class="d-block w-100"
+                                          src="files/projects/calsol_isospi.png">
+                                 </a>
+                             </div>
+                         </div>
+                         <button class="carousel-control-prev"
+                                 data-bs-slide="prev"
+                                 data-bs-target="#calsol_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-prev-icon"></span>
+                             <span class="visually-hidden">Previous</span>
+                         </button>
+                         <button class="carousel-control-next"
+                                 data-bs-slide="next"
+                                 data-bs-target="#calsol_carousel"
+                                 type="button">
+                           <span aria-hidden="true"
+                                 class="carousel-control-next-icon"></span>
+                             <span class="visually-hidden">Next</span>
+                         </button>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-sm-12">
+                     <h2>Solar Car Battery Management System</h2>
+                     <h5 class="text-secondary">Berkeley Solar Car (CalSol) &middot; Electrical Project Lead</h5>
+                     <p class="lead">
+                         I lead the battery management system for CalSol's Gen 11 solar car and designed its controller board, a 4-layer PCB in KiCad that carries the team's ESP32-S3 dev module. Four LTC6820 transceivers and two HX1188 pulse transformers give it four isoSPI ports to the battery module boards, with the cable side of each transformer isolated by a moat cut through every copper layer. The isoSPI pairs are the board's only controlled-impedance nets, and I coordinated their 120 &Omega; differential impedance target with our sponsor fab, Bay Area Circuits. The board also switches the pack contactors, runs eight PWM cooling fans from two ADT7470 controllers on a fused supply, reads the low-voltage power board's source status, and drives an OLED display, four amber error LEDs, and a buzzer.
+                     </p>
+                     <p class="lead">
+                         The first layout is done, and I'm now leading the schematic revision before we re-lay out and order. It adds a TPS7E8101 LDO so the board runs on either 12 V or 24 V CAN, drives the contactor FETs from a UCC27624 gate driver instead of a 3.3 V GPIO, and adds an RS485 transceiver so the pack current sensor reports straight to the BMS. Our previous car's BMS faulted whenever CAN went down because it lost its current reading. Bring-up and firmware integration come next.
+                     </p>
+                 </div>
+             </div>
+             <div class="row project align-items-center">
+                 <div class="col-lg-6 col-sm-12">
+                     <div class="carousel slide" data-bs-interval="false"
                           id="star_carousel">
                          <div class="carousel-indicators">
                              <button aria-current="true" aria-label="Slide 1"
